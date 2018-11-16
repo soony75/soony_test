@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+  <style>
+    /* reset.css */
+    html,body,h1,h2,h3,h4,h5,h6,div,p,ul,ol,li,dl,dt,dd{margin:0; padding:0; border:0; outline:0;}
+    ul,ol,li{list-style:noe;}
+    a{text-decoration:none; color: #333; }
+    a:hover, a:focus{color:#f06;}
+    a:focus{outline:3px solid #fa0; outline-offset:3px;}
+    header,nav,section,article,aside, footer,main,figure,figcaption{display: block;}
+    /* common.css */
+    .hidden{display:block;width:0; height:0; overflow:hidden; position:absolute;z-index: -100}
+    .clearfix:after, .clearfix::after{content:" "; display:block; width:0; height:0; clear:both;}
+
+    #wrap{width:100%; height:500%; background-image:linear-gradient(#acc,#700);}
+    #headBox{position:fixed; top:0; left:0; width:100%; height:150px;background-color: #fa0;}
+    #sideBox{position:fixed;top:200px; left:50px; width:150px; height:400px;background-color: #fff; border:2px solid #333; border-radius:15px;}
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="headBox"></div>
+    <div id="sideBox"></div>
+  </div>
+
+  
+</body>
+</html>

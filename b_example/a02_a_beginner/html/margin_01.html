@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko-kr">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie-edge /">
+	<title>margin 기초이해</title>
+	<!-- css -->
+	<style>
+	html,body{margin:0;}
+		#wrap{width:500px; height:400px; background-color:#ccc; margin:auto;}
+		h1{width:100%; height:50px; background-color: #77f; margin:0;}
+		ul{width:100%; height:300px; background-color:#dfdfdf; margin:0; padding:0;}
+		li{width:100px; height:100px; list-style:none;float:left;}
+			.yellow{background-color:#fa0;}
+			.red{background-color:#f09;}
+			.sky{background-color:#39f;}
+
+			/*margin의 기능을 수행*/
+			.one{margin:10px;}
+			.two{margin:20px 50px;}
+			.three{margin:40px 10px 30px;}
+			.four{margin:10px 20px 30px 40px;}
+		p{width:100%; height: 50px; background-color: #f77; margin:0;}
+	</style>
+</head>
+<body>
+	<!-- layout -->
+	<div id="wrap">
+		<h1>마진의 기초 이해 </h1>
+		<ul>
+			<li class="yellow">01</li>
+			<li class="red one">02</li>
+			<li class="sky two">03</li>
+			<li class="yellow three">04</li>
+			<li class="red four">05</li>
+			<li class="pink">06</li>
+		</ul>
+		<p>마진이란:여백을 의미한다.</p>
+	</div>
+	<!-- script -->
+	<script></script>
+</body>
+</html>

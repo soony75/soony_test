@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="edge">
+</head>
+<style>
+  
+  /* reset.css*/
+  html,body,{margin:0; padding:0; width:0; height:100%;}
+  h1,h2,h3,h4,h5,h6,div,p,pre,ul,ol,li,dl,dt,dd,dt,img{margin:0; padding: 0; border:0; outline:0;}
+  ul,ol,li{list-style: none;}
+  a{text-decoration:none; color:#333;}
+  a:hover, a:focus{color:#f06;}
+  a:focus{outline:3px solid #fa0; outline-offset:3px;}
+  header,nav,section,article,aside,footer,main,figure,figcaption{display: block;}
+
+/* common.css */
+  .hidden{display: block; width:0; height: 0; overflow:hidden; position:absolute; z-index: :-100;}
+  .clearfix:after, .clearfix::after{content:" "; display:block; width:0; height: 0; clear:both;}
+  
+/* design.css */
+h1{padding:0.5rem; margin-bottom:1rem;text-align:center; background-color: #0ac; color:#fff;}
+.position{margin: 0 auto; padding:25px 50px; box-sizing:border-box; width:700px;height: 150px; background-color: #cc0;}
+.position>ul{width:100%;height:100%;background-color: #fff;}
+.position li{float: left; width:100px; height: 100px;border:1px solid #f07; box-sizing: border-box;text-align:center;color:#fff;font-size:1.3rem;line-height:100px;}
+.position .base{border-color:#ffe; background-color: #e46;}
+.position .static{border-color:#ffa; background-color: #a4f;}
+.position .fixed{border-color:#2fb; background-color: #b46;}
+.position .absolute{border-color:#3ff; background-color: #c40;}
+.position .relative{border-color:#4fd; background-color: #d4a;}
+
+/*.static ,fixed,absolute, relative*/
+/* z-index  앞에서 보는것을 기준으로 함 ,마이너스(-) 인경우는 링크를 걸수 없음:ex 물속에 있는것을 건드리수 없는것과 같음  */
+ body{height:3000px;}
+ .position>ul{position:;}
+.static{position:static;top:0; right:400px;z-index: -1000;} /*d아무런변화가 없음*/
+.fixed{position:fixed;top:60px;right:50%; bottom:0;z-index: 100}/*브라우저 화면 내에서 어디든지 움직임- 완전히 다른곳으로 움직임 */
+.absolute{position: absolute; top:30px;right:200px;z-index:200;} /*픽스드와 유사한 기능 필스드는 붙어 있으나 앱솔르투는 부모를 기준으로 상황에 따라 움직임, 없으면 브라우저*/
+.relative{position: relative;top:20px; left:30px;}
+/*자기자신을 기준으로 원래있던 자리에서 움직임, 자기 자리는 비워놈  ex 화장실 다녀옴 */
+</style>
+<body>
+ <h1>포지션의 기초내용 이해하기</h1>
+  <div class="position">
+      <ul>
+        <li class="base">base</li>
+        <li class="static">static</li>
+        <li class="fixed">fixed</li>
+        <li class="absolute">absolute</li>
+        <li class="relative">relative</li>
+        <li class="base">base</li>
+      </ul>
+    </div>  
+<!--  script -->
+
+<style></style>
+
+
+
+
+</body>
+</html>
