@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+
+
+
+#wrap{margin: 0;width: 100%;max-width: 960px;max-width:60rem; height: auto; min-height: 400px; min-height: 25rem; transition:all 300ms linear;}
+  #headBox{width: 100%;height:  150px;height: 9.375rem;background-color: #fa0;}
+  h1{width: 100px;width:6.25rem ;height: 100%;background-color: #9f7; transition:all 300ms linear;float: left}
+  #gnb{width: 45px; width: 2.8125rem; height: 45px; height:2.8125rem;background-color: #9f7;float: right;}
+
+    #infoBox{width: 100%;background-color: #f9f;}
+    #contentBox{width: 100%;height:  400px;height: 25rem;background-color: #acc;}
+    #contentBox>ul{width: 100%;height: 100%;}
+    #contentBox>ul>li{float:left;width: 25%;height: 100%; background-color: #fff;border-right: 1px solid #333;border:0.0625rem solid #333; box-sizing:border-box;}
+   /*   .green{background-color: #5a4;}
+      .blue{background-color: #77f;}*/
+      #contentBox>ul>li:nth-child(2n){background-color: #5a4;}
+      /*2번째마다 해라 */
+      #contentBox>ul>li:nth-child(2n-1){background-color: #77f;}
+
+      /* 2번째에서 1를 빼고 
+        5n
+        5n+2
+
+
+      */
+
+
+   
+   
+
+       /* :nth-child 무조건 연속되어진 형태를 설정가능합니다.
+        <p class="par"></p>
+        <p class="par"></p>
+        <p class="par"></p>
+        <p class="par"></p>
+        <p class="par"></p>
+        <p class="par"></p>
+        <p class="par"></p>
+        
+        .par:nth-child(5){}5번째를 의미함
+        .par:first-child{} 첫번재를 의미
+        .par:last-child{} 마지막을 의미함
+  
+        
+        <div></div>
+        <p></p>
+        <p></p>
+        <div></div>
+        <p></p>
+        * nth-of-type의 경우는 동일 레벨에서 동일한 타입(태그요소)만 선택
+        p:th-of-type(3){} // 이런 경우는 에러
+        
+        p:nth-of-type(3){}
+        
+      */
+    #newsBox{width: 100%;height:  300px;height: 18.75rem;background-color: #f70;}
+    .best_news{width: 100%;height: 100px;background-color: #dd0;}
+    .issue_news{width: 100%;height: 200px;height: 12.5rem;background-color: #f50;}
+
+
+    #footBox{width: 100%;height:  100px;background-color: #730;}
+    #footBox>h2{width: 100px;width: 6.25rem;height: 100%;background-color: #acf;}
+
+/* mobile-------------------*/
+@media screen and (max-width: 480px){
+  #wrap{background-color:#ccc;background-color: #fa0;}
+    #headBox{position: relative;height:  100px;height:  6.25rem;}
+    h1{width: 100%;}
+    #gnb{position: absolute;right: 20px;right: 1.25rem;top: 50%;margin-top:-1.40625rem; }
+    #infoBox{height:  400px;height:  25rem;}
+    #contentBox>ul>li{width: 50%;height: 50%;}
+     #contentBox>ul>li:nth-child(3){background-color: #5a4;}
+      /*2번째마다 해라 */
+      #contentBox>ul>li:nth-child(4){background-color: #77f;}
+      #footBox>h2{width:50%; margin: auto ;height: 100%;background-color: #acf;float:none;}
+
+    /*#newsBox{width: 50%;height: 50%;background-color: #f70;}*/
+
+
+
+}
+/*mob end*/
+/*tablet start---------------*/
+@media screen and (min-width: 481px) and (max-width: 768px){
+  #wrap{background-color: #fac;}
+    #infoBox{height:  300px;height:  18.75rem;}
+   
+}
+/*pc start---------------*/
+
+@media screen and (min-width: 769px){
+  #wrap{background-color: #acf;}
+    #infoBox{height:  450px;height:  28.125rem;}
+    #contentBox{height: 600px;height: 37.5rem;}
+    #newsBox{display: none;}
+
+}
+/*pc end*/
