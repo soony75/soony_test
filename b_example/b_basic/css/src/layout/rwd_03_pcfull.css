@@ -1,7 +1,7 @@
 /* rwd_03_footBox.css */
 
 /*  pc  1366*/
-@media screen and (min-width: 769px) and (max-width:1366px ) {
+@media screen and (min-width: 1367px) {
   /* device 기준크기 1366 */
  #wrap{background-color: #f50;} 
  #addBanner{height: 32.942899vw; /*450/768*100*/min-height: 28.125rem; max-height: 37.5rem}

@@ -1,10 +1,24 @@
 /*  rwd_03_contentBox.css */
 /*  tablet  768*/
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 769px) and (max-width: 1366px) {
 #wrap{background-color: #acf;}  
+
+#navBox{width: 31.25rem;}
+.sign_up{width: 6rem;}
+.menu{width: 25rem;}
+.menu>button{display:none;}
+
+.gnb{display: block;width: 100%;height: 100%;background-color: #aff;}
+.gnb>ul{width: 100%;height: 100%;}
+.gnb>ul>li{float: left;padding:0 0.5rem;  border-right: 1px solid #fff;box-sizing :border-box ;  width: 25%;height: 100%;}
+.gnb>ul>li:last-child{border:0;}
+.gnb a{display: block; width: 100%;height: 100%;background-color: #faf;}
+.gnb a:hover{background-color: #a6f;}
+
 #addBanner{height: 58.59375vw; /*450/768*100*/ min-height: 25rem;max-height:480px;}
 #infoBox{height: 27.34375vw;/*210/768*100*/min-height: 9.375rem;max-height: 30rem}
 #contentBox{height: 70.3125vw;/*540/768*100*/min-height: 28.125rem;max-height: 33.75rem}
+#footBox h2{width: 15.625rem;height: 2.8125rem; background-color: #afa; float: left;position: static}
 
 
 }
