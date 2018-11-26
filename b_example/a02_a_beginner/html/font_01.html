@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- font_01.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/base/common.css" />
+  <link rel="stylesheet" href="../css/src/font_01.css" />
+  <title>font 이해</title>
+</head>
+<body>
+<div id="wrap">
+  <h1>폰트의 기초 개념을 이해해 보자</h1>
+  <p>웹상에서 원하는 서체를 모두 사용 할 수는 없다.<br />
+      컴퓨터마다 서체가 있을수도 없을수도 있기 때문.<br />
+      그래서 이를 해결해야 하는 방법이 필요</p>
+      <ol>
+        <li>여러서체를 혼요하여 처리한다.</li>
+        <li>가급적 영문서체 먼저 사용</li>
+        <li>띄어쓰기 서체는 하나의 서체로 인지 하지 못함로, 강제로 묶음처리(" ")를 한다.</li>
+        <li>영문이 아닌 서체이름일 경우 ""묶어준다.</li>
+        <li>가능하면, 영문 표기법을 사용</li>
+        <li>이도저도 안나오면 마지막에는 해당하는 서체를 군을 작성한다.</li>
+      </ol>
+      <hr />
+      <h2>서체의 형태 </h2>
+      <p>모든 서체는 그 형태가 조금씩 다르다
+      <strong>굵기를 표기</strong>방법과 <br />
+      <ins>밑줄을 표기</ins>하는 방법과<br />
+      <del>최소선을 표기</del>하는 방법과<br />
+      등이 존재<br />
+      하지만 , 강조가 아닌 일부 서체에서 형태를 취하게 하거나, 기본적으로 내장되어 있는 형태에서 모양을 바꾸고자할때에는 다음과 같이 사용한다. </p>
+      <ol>
+        <li><span class="bold">글씨를 강제로 굵게하거나,</span> 
+          <strong class="weight_normal">굵은 글시를 일반형태로 바꾸는 기능</strong> 
+        </li>
+        <li><span class="italic">글씨를 강제로 기울게 하거나,</span> 
+          <em class="italic_normal">기운글씨를 일반형태로 바구는 기능</em>
+        </li>
+        <li><span class="underline">글씨를 강제로 밑주일 생기게 하거나</span> 
+            <ins class="under_normal">밑줄의 글시를 일반형태로 바꾸는 기</ins>
+        </li>
+        <li><span class="delete">글씨를 취소선</span> 으로 만들거나, 
+          <del class="del_normal">취소선의 글씨</del>를 일반형태로 만든 ㄴ기능
+        </li>
+  
+      </ol>
+      <hr />
+      <h2>font 크기를 조정</h2>
+      <p>서체는 크기는 일반형태로 pt단위를 사용한다.<br />
+      하지만 반흥형이나 동적형태, 최신 브라우저의 상황ㅇ이 변하기 때문에. pt단위를 웹서체의 크기로 사용하지는 않고 있다. <br />
+      즉 ,현재는 em, rem, %...단위로 사용
+    </p>
+      <section class="mini_web">
+        <h1>h1은 큰 글씨, 굵은글씨로 인식을 하기 마련! </h1>
+        <h2>h2는 두번재로 중요한 글씨로 h1 보다 작은 크기의 큰글씨로 인식되고 있다. 하지만 </h2>
+        <h3>h3는 세번재로 중요한 글씨다 마찬가지 굵고 큰 글시로 인신한다. 하지만 </h3>
+        <h4>굵은 글씨 마찬가ㄱ 크기 정검 </h4>
+      </section>
+
+     <p>위 내용을 통해 크기는 상황고 디자인의 역할에 따라 달라질수 있다. </p>
+
+        <!-- ===============================  -->
+      <h3>단위에 따를 크기 변화</h3>
+
+      <h4>pt 단위로 체크 </h4>
+      <p class="pt_check size_box"> 큰 영역으로 텍스트 36pt 크기, <br />
+        <span class="pt_01">절반크기로 체크 18pt로 <br />
+          <span class="pt_02">다시 절반크기로 체크 9pt 크기<br />
+          <span class="pt_03">두배크기로 체크 18pt크기 <br />
+            <span class="pt_04">다시 절반 줄이기 9pt 크기<br />
+              </span>
+            </span>
+          </span>
+        </span> 
+      </p>
+
+      <!-- =============================== -->
+
+      <h4>&percnt 단위로 체크 </h4>
+      <p class="per_check size_box">
+        큰 영역으로 텍스트 32pt 크기, <br />
+        <span class="per_01">절반크기로 체크 16pt로 <br />
+          <span class="per_02">다시 절반크기로 체크 8pt 크기<br />
+           <span class="per_03">두배크기로 체크 16pt크기 <br />
+            <span class="per_04">다시 절반 줄이기 8pt 크기<br />
+            </span>
+          </span>
+        </span>
+      </span> 
+      </p>
+       <!-- =============================== -->
+
+      <h4>em 단위로 체크 </h4>
+      <p class="em_check size_box">
+        큰 영역으로 텍스트 32pt 크기, <br />
+        <span class="em_01">절반크기로 체크 16pt로 <br />
+          <span class="em_02">다시 절반크기로 체크 8pt 크기<br />
+           <span class="em_03">두배크기로 체크 16pt크기 <br />
+            <span class="em_04">다시 절반 줄이기 8pt 크기<br />
+            </span>
+          </span>
+        </span>
+      </span> 
+      </p>
+
+             <!-- =============================== -->
+
+      <h4>rem 단위로 체크 </h4>
+      <p class="rem_check size_box">
+        큰 영역으로 텍스트 32pt 크기, <br />
+        <span class="rem_01">절반크기로 체크 16pt로 <br />
+          <span class="rem_02">다시 절반크기로 체크 8pt 크기<br />
+           <span class="rem_03">두배크기로 체크 16pt크기 <br />
+            <span class="rem_04">다시 절반 줄이기 8pt 크기<br />
+            </span>
+          </span>
+        </span>
+      </span> 
+      </p>
+
+
+
+      <!-- ================== -->
+
+      <h3>em 과 rem의 서체가 아닌 크기값으로 구분!!</h3>
+      <div class="px_box">w160,h160
+        <div class="px_01">w50%,h50%
+          <div class="px_02">w50%,h50%
+            <div class="px_03">w200%,h200%
+              <div class="px_04">w50%,h50%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="em_box">w160,h160
+        <div class="em_box01">w50%,h50%
+          <div class="em_box02">w50%,h50%
+            <div class="em_box03">w200%,h200%
+              <div class="em_box04">w50%,h50%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rem_box">w160,h160
+        <div class="rem_box01">w50%,hr50%
+          <div class="rem_box02">w50%,h50%
+            <div class="rem_box03">w200%,h200%
+              <div class="rem_box04">w50%,h50%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+  
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=5.0">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
   <link rel="stylesheet" href="../css/base/reset.css">
   <link rel="stylesheet" href="../css/base/common.css">
   <link rel="stylesheet" href="../css/src/rwd_03_homework.css">
@@ -43,13 +43,31 @@
   <title>responsive web homework</title>
 </head>
 <body>
-<div id="wrap"></div>
+<div id="wrap">
+  <div id="headBox">
+    <h1>logo</h1>
+    <nav id="navBox">
+      <h2 class="hidden">navigation</h2>
+    </nav>
+  </div>
+  <div id="addBanner">
+    <h2>웹페이지 광고영역</h2>
+  </div>
+  <!-- // addBanner -->
+  <div id="infoBox"><h2>infoBox</h2>
+  </div>
+  <!-- // infoBox -->
+  <div id="contentBox"><h2>contentBox</h2>
+  </div>
+  <!-- // contentBox -->
+  <div id="footBox"><h2>footBox</h2>
+  </div>
+  <!-- // footBox -->
+</div>
 
  <script src="../js/base/jquery-3.3.1.min.js"></script> 
 <script src="../js/base/jquery-ui.min.js"></script> 
-<script>
-  (function($) {})(jquery);
-</script>
+
 
 </body>
 </html>
