@@ -11,8 +11,8 @@
   #navBox{width: 18.75vw;min-width:3.75rem ;/*90/480*100*/ max-width: 5.625rem; height: 7.901667vw;/*38/480*100*/min-height: 1.5625rem; max-width:   2.375rem }
 
 
-  .sign_up{width: 7.5vw;min-width: 1.5rem;max-width: 2.25rem}
-  .menu{width: 45px; /*45/480*100*/ min-width: 1.875rem; max-width: 2.8125rem}
+  .sign_up{width: 5vw;min-width: 1.5rem;max-width: 2.25rem}
+  .menu{width: 7vw; /*45/480*100*/ min-width: 1.875rem; max-width: 2.8125rem}
 
 #addBanner{margin-top: 12.5vw;height: 150vw;/*720/480*100*/min-height: 30rem;}
 #infoBox{height: 150vw;min-height: 30rem;}
