@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* slide_banner_01.css */
+
+
+#wrap{width: 100%; height:100%; background-color: #cfcfcf;}
+h1{padding: 1rem; border-bottom:1px solid #333; background-color: #7af; margin-bottom: 2rem;
+  box-shadow:0 0.3rem 0.3rem rgba(50,50,50,0.5);}
+
+#viewBox{margin: auto; width: 60rem; height: 450px; border:2px solid #777; background-color: #fff;}
+.view_indicator{position: absolute;bottom: 1rem; left:50%;margin-left: -6.25rem;width: 12.5rem;height: 1.875rem;background-color: #acc;}
+.view_btn{position: absolute;top:50%;margin-top: -2.5rem;width: 100%;height: 5rem;;background-color: #f6f;}
+.view_banner{width: 100%;height: 100%;background-color: #fa7;}
