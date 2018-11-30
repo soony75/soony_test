@@ -24,11 +24,97 @@ viewIndi.children('a').on('focus',function(e){// 여기 e를 거쳐서 아래 e�
 
 
 
- // step_02 오른쪽 버튼 클릭하여 오른쪽 광고로 이동하게 만들기
+ // step_02 오른쪽 버튼 클릭하여 오른쪽 광고로 이동하게 만들기(step 5에서 다시 설정 )
+/*var next =$('.next_btn');
+var slideI =0;
+next.on('click',function(e){
+  e.preventDefault();
+  slideI +=1;
+  var _index =slideI*100;
+  viewOuter.animate({marginLeft:-_index+'%'});
+
+})
+*/
  // step_03 왼쪽 버튼 클릭하여 이전 광고로 이동하게 만들기
+//  var prev =$('.prev_btn');
+
+// prev.on('click',function(e){
+//   e.preventDefault();
+//   slideI -=1;
+//   var _index =slideI*100;
+//   viewOuter.animate({marginLeft:-_index+'%'});
+
+// })
  // step_04 해당광고의 끝으로 이동하면 버튼 사라ㄱ지게 만들기
+
+      // var next =$('.next_btn');
+      // var prev =$('.prev_btn');
+      // var slideI =0;
+      // var liLeng = viewIndi.length-1; // length는 갯수를 파악하는 것 0이면없다는 뜻
+      // 
+      // next.on('click',function(e){
+        // e.preventDefault();
+        // slideI +=1;
+        // if(slideI>liLeng){ slideI = liLeng }
+      // 
+        // var _index =slideI*100;
+        // viewOuter.animate({marginLeft:-_index+'%'});
+      // 
+      // })
+
+         // 
+        // prev.on('click',function(e){
+          // e.preventDefault();
+          // slideI -=1;
+          // if(slideI <0){slideI = 0; } //slideI 가 0보다 작으면 slideI 
+        // 
+          // var _index =slideI*100;
+          // viewOuter.animate({marginLeft:-_index+'%'});
+        // 
+//})
+
+
+
+
 //  step_05 인디케이터와 순서값을 연동하여 처리되게 만들기 
 
+    var next =$('.next_btn');
+      var prev =$('.prev_btn');
+      var slideI =0;
+      var liLeng = viewIndi.length-1; // length는 갯수를 파악하는 것 0이면없다는 뜻
+      
+      next.on('click',function(e){
+        e.preventDefault();
+        slideI +=1;
+        if(slideI>liLeng){ slideI = liLeng }
+      
+        var _index =slideI*100;
+        viewOuter.animate({marginLeft:-_index+'%'});
+      
+      })
 
+         
+        prev.on('click',function(e){
+          e.preventDefault();
+          slideI -=1;
+          if(slideI <0){slideI = 0; } //slideI 가 0보다 작으면 slideI 
+        
+          var _index =slideI*100;
+          viewOuter.animate({marginLeft:-_index+'%'});
+
+
+
+
+          viewIndi.removeClass('action'); // class='action'을 지워라 
+  viewIndi.eq(_thisI).addClass('action'); //eq 순번에 class=action을 추가해라 
+
+  console.log(_thisI);
+  var _index =_thisI*100; // margin이 0이므로 -100% 만큼을 만들기 위해 
+  viewOuter.animate({marginLeft:-_index+'%'}); // 
+
+
+
+        
+})
 
 })(jQuery);
