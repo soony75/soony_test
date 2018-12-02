@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/* pb_main_homework.css */
+
+/*  common.css */
+#wrap{  margin: auto;  width: 100%;min-height: 10rem; background-color: #fa7; height: auto;}
+#headBox{width: 100%; height: 150px; background-color: #f7b9a4; padding:13px 13px; box-sizing: border-box;}
+#container{position: relative;  box-sizing: border-box; margin: auto; width: 100%;
+	height: 40px;	background-color: rgba(0,37,252,0.2); }
+#container>h1{ position: absolute;  left:50%; margin-left:-124px/*-124/480*100*/; width:100%;height: auto; 
+	background-color:#edb2be; font-size: 12pt ;text-align: center;line-height: 2.5;}
+#gnb{float:left;  background-color:#edb2be;width: 40px;height:40px;font-size: 12pt}
+#serBox{float:right;  background-color: #edb2be;width: 40px;height: 40px;font-size:12pt;}
+
+#sectBox01{width: 100%; height: 37.5rem ; background-color: #ffedca;}
+#sectBox02{width: 100%; height: 21.875rem ; background-color: #f7b9a4;}
+#sectBox03{width: 100%; height: 21.75rem ; background-color: #ffedca;}
+#sectBox04{width: 100%; height: 21.75rem ; background-color: #f7b9a4;}
+#sectBox05{width: 100%; height: 18.75rem ; background-color: #ffedca;}
+#sectBox06{width: 100%; height: 25.5rem ; background-color: #f7b9a4;}
+#footBox{width: 100%;height: 9.375rem;background-color: #333;}
+
+/*  mobile 480 .css   */
+@media screen and (max-width: 480px) {
+#headBox{min-width: 300px;height:64px;}
+#container>h1{width:248px ;height:40px /*8.33vw*/;}
+
+
+
+#sectBox01{ height: 21.875rem; }
+#sectBox02{ height: 36.25rem; }
+#sectBox03{ height: 29rem; }
+#sectBox04{ height: 50.75rem; }
+#sectBox05{ height: 26.5rem; }
+#sectBox06{ height: 9.75rem; }
+#footBox{height: 8.5rem;}
+	
+}
+/*  // mobile 480 .css  */
+
+/*  tablet 768 .css   */
+@media screen and (min-width: 481px) and (max-width: 768px ) {
+#headBox{height:3.75rem;}	
+#container>h1{width:248px ;height:40px /*8.33vw*/;}
+
+
+#sectBox01{ height: 28.625rem; }
+#sectBox02{ height: 33rem; }
+#sectBox03{ height: 29rem; }
+#sectBox04{ height: 38.625rem; }
+#sectBox05{ height: 29.875rem; }
+#sectBox06{ height: 9.75rem; }
+#footBox{height: 8.5rem;}
+}
+/*  // tablet 768 .css */
+
+/* pc 1366  */
+@media screen and (min-width: 769px) and (max-width: 1366px) {
+	#headBox{padding: 47px 8px;}
+	#container{width:1007px /*1007px*/;height: 60px;}
+	#container>h1{position: absolute;  left:50%;margin-left:-207px;  width: 414px;height: 60px;}
+
+ #gnb{width: 60px;height: 60px;}
+ #gnb>ul{}
+ #gnb>ul>li{}
+ #serBox{width: 60px;height: 60px;}
+
+
+}
+ /* // pc 1366 .css  */
+
+/* pc   1920  */
+@media screen and (min-width: 1367px) and (max-width: 1920px) {
+#headBox{padding: 8px 20px;}
+#container{width:1323px /*1007px*/;height: 128px;}	
+#container>h1{position: absolute; top:30px; left:50%;margin-left:-190px;  width: 380px;height: 58px;}
+
+
+}
+
+/*  // pc 1920  */
+/*  pc full  .css  */
+@media screen and (min-width: 1921) {
+	
+}
+/* //  pc full .css  */
