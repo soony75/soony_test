@@ -1,0 +1,47 @@
+/*  tablet 768 .css   */
+@media screen and (min-width: 481px) and (max-width: 768px ) {
+#headBox{padding : 13px 38px ;height:3.75rem;}  
+#container>h1{width:248px ;height:40px /*8.33vw*/;}
+.menu{float:left;}
+.gnb{display: none;}
+
+#sectBox01{padding:16px 38px;/*box-sizing: border-box;*/ height: 458px; }
+  .seBox01{height: 408px;  }
+#sectBox02{padding:33px 38px 0;/*box-sizing: border-box;*/ height: 33rem; }
+  .hoBox02{height:465px;}
+  .hoBox02>div{padding-top:19px; box-sizing: border-box; width: 100%; height:100%; text-align: center; border:1px solid #fff;}
+  .hoBox02>div>.ho_ti{margin-bottom :47px; width: 100%;height: 27px;background-color: #d8d89a;}
+  .hoBox02>div>.ho_bg{width: 100%;height: 370px;background-color: #d8d89a;}
+
+
+#sectBox03{padding:33px 38px 0 ; height: 29rem; }
+  .proBox03{padding-top:26px;box-sizing: border-box;height:386px;}
+  .proBox03>.pro_ti{margin-bottom :31px;}
+  .proBox03>.pro_btn{position: absolute;z-index:50; left:50%; margin-left:-96px; bottom:100px;  width: 196px;height:0;background-color: #d8d89a; }
+  .pro_btn>.next_btn>a{float:left; display: block; width: 70px;height: 70px; background-color: #d8d89a;font-size: 36pt; }
+  .pro_btn>.prew_btn>a{float:right; display: block; width: 70px;height: 70px; background-color: #d8d89a; font-size: 36pt;}
+  
+  .pro_bg{margin-bottom:20px ; height: 175px;}
+  .pro_bg>ul>li{width: 50%;}
+  .pro_bg>ul>li:nth-child(3){display: none}
+  
+
+
+#sectBox04{padding:4.95vw/*38/768*100*/ /*38/768*100*/4.95vw 0 ; height: 38.625rem; }
+  .quickBox04{padding-top:5.34vw;/*41/768*100*/ height: 70.05vw;/*538/768*100*/}
+  .quick_ti{width: 90%;height: 3.515625vw;/*27/768*100*/}
+  .quick_list{margin:auto; padding:7.16vw /*55/768*100*/ 0.39vw/*23/768*100*/ 0; box-sizing: border-box; }
+  .quick_list>ul{width: 100%;height:/*70.05vw*/48.96vw;/*376/768*100*/ /* background-color: #d8d89a;*/ }
+  .quick_list>ul>li{float:left; width:  22.14vw;/* 170/768*100 */height:22.14vw;border:0.13vw/*1/768*100*/ solid #fff;border-radius:50%;margin-right:6.64vw; /*51/768*100*/margin-bottom:4.17vw ;/*32/768*100*/  box-sizing: border-box; background-color: #d8d89a; text-align: center;}
+  .quick_list>ul>li:nth-child(3n){margin-right: 0;}
+
+
+
+#sectBox05{padding:24px 38px 0 ; height: 424px; }
+  .banBox05{height: 381px;}
+#sectBox06{padding:14px 38px 0 ; height: 9.75rem; }
+  .brandBox06{height:123px ;}
+#footBox{height: 8.5rem;}
+ #footBox address{padding:20px 38px 0;}
+  .addBox{height:92px;}
+}/*  // tablet 768 .css */

@@ -1,0 +1,40 @@
+/*  common.css */
+#wrap{  margin: auto;  width: 100%;min-height: 10rem; background-color: #fa7; height: auto;}
+#headBox{width: 100%; height: 150px; background-color: #f7b9a4; padding:13px 13px; box-sizing: border-box;}
+#container{position: relative;  box-sizing: border-box; margin: auto; width: 100%;
+  height: 40px; background-color: rgba(0,37,252,0.2); }
+#container>h1{ position: absolute;  left:50%; margin-left:-124px/*-124/480*100*/; width:100%;height: auto; 
+  background-color:#edb2be; font-size: 12pt ;text-align: center;line-height: 2.5;}
+.menu{float:left;}
+#serBox{float:right;}
+ 
+.gnb{float:left;  background-color:#edb2be;width: 40px;height:40px;font-size: 12pt}
+#serBox{float:right;  background-color: #edb2be;width: 40px;height: 40px;font-size:12pt;}
+
+
+#sectBox01{width: 100%; height: 600px ; box-sizing: border-box;background-color: #ffedca;}
+  .seBox01{background-color: rgba(0,37,252,0.2); }
+#sectBox02{width: 100%; height: 350px ; box-sizing: border-box;background-color: #f7b9a4;}
+  .hoBox02{background-color: rgba(0,37,252,0.2);} 
+  .hoBox02>div{padding-top:13px; box-sizing: border-box; width: 100%; height:100%; text-align: center; border:1px solid #fff;}
+  .hoBox02>div>.ho_ti{margin-bottom :29px; width: 100%;height: 27px;background-color: #d8d89a;}
+  .hoBox02>div>.ho_bg{width: 100%;height: 235px;background-color: #d8d89a;}
+
+#sectBox03{width: 100%; height: 348px ; box-sizing: border-box;background-color: #ffedca;}
+  .proBox03{position: relative; background-color: rgba(0,37,252,0.2);}
+  .proBox03>.pro_ti{width: 100%; height: 27px;background-color: #d8d89a;text-align: center;}
+  .proBox03>.pro_btn{position: absolute;} 
+  .pro_bg{background-color: #d8d89a}
+  .pro_bg>ul>li{float: left; display: block; width: 33.33%;height: 175px; border-right:1px solid #fff; box-sizing: border-box;}
+
+
+#sectBox04{width: 100%; height: 21.75rem ; box-sizing: border-box;background-color: #f7b9a4;}
+  .quickBox04{background-color: rgba(0,37,252,0.2);}
+  .quick_ti{background-color: #d8d89a; text-align: center;}
+
+#sectBox05{width: 100%; height: 18.75rem ; box-sizing: border-box;background-color: #ffedca;}
+  .banBox05{background-color: rgba(0,37,252,0.2);} 
+#sectBox06{width: 100%; height: 25.5rem ; box-sizing: border-box;background-color: #f7b9a4;}
+  .brandBox06{background-color: rgba(0,37,252,0.2);} 
+#footBox{width: 100%;height: 150px;box-sizing: border-box;background-color: #333;}
+ .addBox{width: 100%; background-color: #edb29d;}
