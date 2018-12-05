@@ -1,17 +1,9 @@
 @charset "UTF-8";
 
-/* pb_main_homework.css */
+/* pb_main.css */
 
 @import url("./layout/rwd_pb_common.css");
 @import url("./layout/rwd_pb_mobile.css");
 @import url("./layout/rwd_pb_tablet.css");
 @import url("./layout/rwd_pb_labtop.css");
 @import url("./layout/rwd_pb_pcfull.css");
-
-
-
-
-
-
-
-

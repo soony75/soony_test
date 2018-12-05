@@ -1,7 +1,7 @@
 /*  tablet 768 .css   */
 @media screen and (min-width: 481px) and (max-width: 768px ) {
 #headBox{padding : 13px 38px ;height:3.75rem;}  
-#container>h1{width:248px ;height:40px /*8.33vw*/;}
+#container>h1{width:140px ;height:40px /*8.33vw*/;}
 .menu{float:left;}
 .gnb{display: none;}
 
@@ -27,7 +27,7 @@
   
 
 
-#sectBox04{padding:4.95vw/*38/768*100*/ /*38/768*100*/4.95vw 0 ; height: 38.625rem; }
+#sectBox04{padding:4.95vw/*38/768*100*/ /*38/768*100*/4.95vw 0 ; height: 80.47vw;/*618/768*100*/ }
   .quickBox04{padding-top:5.34vw;/*41/768*100*/ height: 70.05vw;/*538/768*100*/}
   .quick_ti{width: 90%;height: 3.515625vw;/*27/768*100*/}
   .quick_list{margin:auto; padding:7.16vw /*55/768*100*/ 0.39vw/*23/768*100*/ 0; box-sizing: border-box; }
