@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- saved from url=(0160)https://www.dreamsearch.or.kr/servlet/adBanner?from=https%3A//news.joins.com/article/22518007&u=2017112900009&us=12134&s=12860&iwh=728_90&igb=60&cntad=3&cntsr=3 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+    <title>criteo</title>
+    
+</head>
+<body style="margin:0;padding:0;text-align:center;" marginwidth="0" marginheight="0">
+
+<!-- BEGIN CRITEO CDB -->
+<script async="async" type="text/javascript" src="./publishertag.js.다운로드"></script>
+<div id="criteo_slot_1338574"><iframe id="cto_iframe_0c88a0a42a" frameborder="0" allowtransparency="true" hspace="0" marginwidth="0" marginheight="0" scrolling="no" vspace="0" width="728px" height="90px" src="./saved_resource(52).html"></iframe></div>
+<script>
+    var from = document.referrer;
+    var zoneid = "1338574";
+    var passback_url = decodeURIComponent("https%3A%2F%2Fwww.dreamsearch.or.kr%2Fservlet%2FadBanner%3Ffrom%3Dhttps%25253A%252F%252Fnews.joins.com%252Farticle%252F22518007%26u%3D2017112900009%26us%3D12134%26s%3D12860%26iwh%3D728_90%26igb%3D60%26cntad%3D3%26cntsr%3D3%26%26passback%3Dcriteono");
+    var elpwidth = "728";
+    var elpheight = "90";
+
+    !function () {
+        /* CONFIG CRITEO ZONE ID, SLOT DIV ID, PASSBACK */
+
+        var criteoZoneId = zoneid;
+        var criteoSlotId = "criteo_slot_" + zoneid;
+        var passback = function () {
+            /* CONFIGURE YOUR PASSBACK CODE HERE */
+            var mob_iframe = document.createElement("iframe");
+            mob_iframe.src = passback_url.split("passback")[0] + "passback=no";
+            mob_iframe.width = elpwidth;
+            mob_iframe.height = elpheight;
+            mob_iframe.scrolling = "no";
+            mob_iframe.frameBorder='0';
+            mob_iframe.marginWidth='0';
+            mob_iframe.marginHeight='0';
+            document.getElementsByTagName("body")[0].appendChild(mob_iframe);
+        }
+
+        var CriteoAdUnits = {"placements": [{"slotid": criteoSlotId, "zoneid": criteoZoneId}]};
+        window.Criteo = window.Criteo || {};
+        window.Criteo.events = window.Criteo.events || [];
+        var processCdbBid = function () {
+            var bids = Criteo.GetBidsForAdUnit(criteoSlotId);
+            if (bids.length > 0) {
+                var bidFound = bids[0];
+                Criteo.RenderAd({bidId: bidFound.id, containerId: bidFound.impressionId});
+            } else {
+                passback();
+            }
+        };
+        Criteo.events.push(function () {
+            Criteo.RequestBids(CriteoAdUnits, processCdbBid, 2000);
+        });
+    }();
+</script>
+<!-- END CRITEO CDB -->
+
+
+</body></html>

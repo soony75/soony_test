@@ -1,0 +1,7 @@
+var admaru_head = document.head || document.getElementsByTagName('head')[0];
+setTimeout(function(){
+	var admaru_ima = document.createElement('script');
+	admaru_ima.src = "//ads.admaru.com/js/joongang_admaru_icv2.js";
+	admaru_ima.async = true;
+	admaru_head.appendChild(admaru_ima);
+}, 1500);

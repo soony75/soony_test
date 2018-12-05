@@ -31,6 +31,10 @@
   
 #sectBox05{padding:39px 8px 0 ; }
   .banBox05{height: 220px;}
+  .banBox05>div{padding-top:9px;}
+  .pb_spe{float:left; width: 494px;height: 175px;background-color: #d8d89a;}
+  .pb_thank{float: right; margin-top:15px; width: 494px;height: 175px;background-color: #d8d89a;}
+
 #sectBox06{padding:22px 8px 0 ;  }
   .brandBox06{height:366px ;}
 #footBox{height: 8.5rem;}
