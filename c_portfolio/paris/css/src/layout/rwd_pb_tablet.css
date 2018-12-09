@@ -1,12 +1,11 @@
 /*  tablet 768 .css   */
 @media screen and (min-width: 481px) and (max-width: 768px ) {
 #headBox{padding : 13px 38px ;height:3.75rem;}  
-#container>h1{width:140px ;height:40px /*8.33vw*/;}
-.menu{float:left;}
+.container>h1{width:/*140px*/ 29.17vw ;height:40px /*8.33vw*/;}
+#navBox{float:left; }
 .gnb{display: none;}
+#sectBox01{ height: 458px; }
 
-#sectBox01{padding:16px 38px;/*box-sizing: border-box;*/ height: 458px; }
-  .seBox01{height: 408px;  }
 #sectBox02{padding:33px 38px 0;/*box-sizing: border-box;*/ height: 33rem; }
   .hoBox02{height:465px;}
   .hoBox02>div{padding-top:19px; box-sizing: border-box; width: 100%; height:100%; text-align: center; border:1px solid #fff;}
@@ -17,9 +16,8 @@
 #sectBox03{padding:33px 38px 0 ; height: 29rem; }
   .proBox03{padding-top:26px;box-sizing: border-box;height:386px;}
   .proBox03>.pro_ti{margin-bottom :31px;}
-  .proBox03>.pro_btn{position: absolute;z-index:50; left:50%; margin-left:-96px; bottom:100px;  width: 196px;height:0;background-color: #d8d89a; }
-  .pro_btn>.next_btn>a{float:left; display: block; width: 70px;height: 70px; background-color: #d8d89a;font-size: 36pt; }
-  .pro_btn>.prew_btn>a{float:right; display: block; width: 70px;height: 70px; background-color: #d8d89a; font-size: 36pt;}
+  
+ 
   
   .pro_bg{margin-bottom:20px ; height: 175px;}
   .pro_bg>ul>li{width: 50%;}
@@ -38,8 +36,8 @@
 
 
 #sectBox05{padding:24px 38px 0 ; height: 424px; }
-  .banBox05{height: 381px;}
-  .banBox05>div{padding-top:9px;}
+  .banBox05{padding-top:7px; height: 381px;}
+  
   .pb_spe{width: 100%;height: 175px;background-color: #d8d89a;}
   .pb_thank{margin-top:15px; width: 100%;height: 175px;background-color: #d8d89a;}
 

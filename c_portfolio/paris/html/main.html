@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5" />
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5" />
   <link rel="stylesheet" href="../css/base/reset.css" />
   <link rel="stylesheet" href="../css/base/common.css" />
   <link rel="stylesheet" href="../css/src/pb_main.css" />
@@ -23,9 +23,9 @@
   <!-- layout -->
    <div id="wrap">
     <header id="headBox">
-      <div id="container">
+      <div class="container">
         <h1><a href="#">PARIS BAGUETTE</a></h1>
-        <nav class="menu">
+        <nav id="navBox">
           <h2 class="hidden">navigation</h2>
           <button type="button" class="hidden_wrap"><span>메뉴 </span></button>
           <div class="gnb">
@@ -44,19 +44,16 @@
             </ul>
           </div>
         </nav>
-        <div id="serBox"><div class="gnb_ser">
-          <a href="#">ser</a>
-        </div> 
+        <div id="serBox">
+          <div class="gnb_ser"><a href="#">ser</a></div> 
         </div>
-       
       </div>
     </header>
     <section id="sectBox01">
-     
      <div class="seBox01">
        <h2 class="hidden">광고</h2>
        <div class="se01_indicator hidden_wrap">
-         <ul>
+         <ul >
            <li class="action"><a href="#"><span>banner_01</span></a></li>
            <li><a href="#"><span>banner_02</span></a></li>
            <li><a href="#"><span>banner_03</span></a></li>
@@ -67,15 +64,38 @@
        </div>
        <div class="se01_btn hidden_wrap">
          <button type="button" class="btn next_btn">&rsaquo;<span></span></button> 
-         <button type="button" class="btn prew_btn">&lsaquo;<span></span></button>
+         <button type="button" class="btn prev_btn">&lsaquo;<span></span></button>
        </div>
        <div class="se01_banner">
-         se01_banner
+        <div class="se01_banner_outer">
+          <div class="se01_ti se01_banner_01">
+            <h3>광고 title01</h3> 
+            <p>광고01</p>
+          </div>
+          <div class="se01_ti se01_banner_02">
+            <h3>광고 title02</h3> 
+            <p>광고02</p>
+          </div>
+          <div class="se01_ti se01_banner_03">
+            <h3>광고 title03</h3> 
+            <p>광고03</p>
+          </div>
+          <div class="se01_ti se01_banner_04">
+            <h3>광고 title04</h3> 
+            <p>광고04</p>
+          </div>
+          <div class="se01_ti se01_banner_05">
+            <h3>광고 title05</h3> 
+            <p>광고05</p>
+          </div>
+          <div class="se01_ti se01_banner_06">
+            <h3>광고 title06</h3> 
+            <p>광고06</p>
+          </div>
+        </div>
        </div>
       </div>
     </section>
-
-
     <section id="sectBox02">
       <div>
         <h2 class="hidden">PB HAPPY ORDER</h2>
@@ -89,30 +109,31 @@
     </section>
     <section id="sectBox03">
        <h2 class="hidden">PB PRODUCT</h2>
-       <div class="proBox03">
+       <div class="proBox03 " >
           <div class="pro_ti"><p>PB PRODUCT</p></div> 
-          <div class="pro_btn ">
-             <button type="button" class=" next_btn">
-              <a href="#">&rsaquo;</a></button>
-             <button type="button" class=" prew_btn"><a href="#">&lsaquo;</a></button>
+          <div class="pro_btn hidden_wrap">
+             <button type="button" class="btn next_btn"><a href="#">&rsaquo;</a></button>
+             <button type="button" class="btn prev_btn"><a href="#">&lsaquo;</a></button>
           </div>
-          <div class="pro_bg"> 
-            <ul>
-              <li>product01</li>
-              <li>product02</li>
-              <li>product03</li>
-            </ul>
+          <div class="se04_banner_outer">
+            <div class="pro_bg"> 
+              <ul>
+                <li>product01</li>
+                <li>product02</li>
+                <li>product03</li>
+              </ul>
+            </div>
           </div>
        </div> 
     </section>
     <section id="sectBox04">
       <div>
         <h2 class="hidden">PB QUICK MENU</h2>
-        <div class="quickBox04">
+        <div class="quickBox04 ">
           <div class="quick_ti">
             <p>PB QUICK MENU</p>
           </div>
-          <div class="quick_list">
+          <div class="quick_list ">
             <ul>
               <li>매장찾기</li>
               <li>메뉴02</li>
@@ -127,7 +148,7 @@
     </section>
     <section id="sectBox05">
       <div>
-        <h2 class="hidden">banner -special-thank</h2>
+        <h2 class="hidden">banner( PB-special,PB thank you )</h2>
         <div class="banBox05">
           <ul>
               <li class="pb_spe">pb -special</li>
@@ -138,7 +159,7 @@
     </section>
     <section id="sectBox06">
       <div>
-        <h2 class="hidden">band site</h2>
+        <h2 class="hidden">band site, recuit info</h2>
         <div class="brandBox06">brand / recruit</div>
     </div></section>
     <footer id="footBox">
