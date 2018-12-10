@@ -4,20 +4,20 @@
   // console.log('start!!');
   /* ========================
   
-  01. text()       : 작성한 내용을 확인/작성 하는 메소드 기존꺼 삭제 
+  01. text()       : 작성한 내용을 확인/작성 하는 메소드
   02. html()       : html태그를 확인/제작 하는 메소드
   03. wrap()       : 선택한 요소의 부모요소를 제작 하는 메소드
   04. before()     : 선택요소의 이전(형제)에 요소를 제작/삽입하는 메소드
   05. after()      : 선택 요소의 이후(형제)에 요소를 제작/삽입하는 메소드
   06. prepend()    : 선택요소의 자식의 앞에 요소를 제작/삽입하는 메소드 
-  06-1. prependTo()  주어 목적어 바뀌는거 
+  06-1. prependTo()
   07. append()     : 선택요소의 자식의 뒤에 요소를 제작/삽입하는 메소드
   07-1 appendTo()
-  08. clone()      : 내용/태그 ... 복제하는 메소드 (true) 라고 써 준다. 
+  08. clone()      : 내용/태그 ... 복제하는 메소드
   09. remove()     : 선택 요소를 삭제하는 메소드
-  10. empty()      : 선택요소의 내부를 비우는 메소드 선택한 작식들 삭제 
-  11. removeAttr('속성명') : 선택요소의 속성을 삭제하는 메소드 ('속성명 ')
-  12. attr('속성명'(,'속성값을 적용'))       : 선택요소의 속성을 파악/수정/삽입 하는 메소드
+  10. empty()      : 선택요소의 내부를 비우는 메소드
+  11. removeAttr() : 선택요소의 속성을 삭제하는 메소드
+  12. attr()       : 선택요소의 속성을 파악/수정/삽입 하는 메소드
   13. val()        : form 요소의 값을 파악/삽입 하는 메소드
    =========================*/
 
@@ -268,7 +268,7 @@ var input2 = $('#input_2').on('keyup', function(){
  {color:'#afa', text:'제품6 에대한 각각 설명하기!!!',link:'http://naver.com'},
  ];             
 
- var product, prEq;
+ var product;
  for(var i=0; i < productList.length; i+=1){
    product = $('.product').eq(0).clone(true);
    shop.append(product);
@@ -276,19 +276,10 @@ var input2 = $('#input_2').on('keyup', function(){
    // // $('.product').eq(i).find('p').eq(0).text(text[i]);
    // $('.product').eq(i).find('.shop_img').next().text(text[i]);
    // $('.product').eq(i).find('a').attr('href', link[i]);
-
-   //   $('.product').eq(i).find('.shop_img').css({backgroundColor:productList[i].color[i]});
-   // // $('.product').eq(i).find('p').eq(0).text(text[i]);
-   // $('.product').eq(i).find('.shop_img').next().text(productList[i].text[i]);
-   // $('.product').eq(i).find('a').attr('href',productList[i].link[i]);
-preEq= $('product').eq(i);
-
-     preEq.find('.shop_img').css({backgroundColor:productList[i].color[i]});
+     $('.product').eq(i).find('.shop_img').css({backgroundColor:productList[i].color[i]});
    // $('.product').eq(i).find('p').eq(0).text(text[i]);
-   prEq.find('.shop_img').next().text(productList[i].text[i]);
-   prEq.find('a').attr('href',productList[i].link[i]);
-
-
+   $('.product').eq(i).find('.shop_img').next().text(productList[i].text[i]);
+   $('.product').eq(i).find('a').attr('href',productList[i].link[i]);
  }
 
  var len = $('.product').length;
