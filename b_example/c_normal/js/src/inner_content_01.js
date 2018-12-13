@@ -281,12 +281,12 @@ var input2 = $('#input_2').on('keyup', function(){
    // // $('.product').eq(i).find('p').eq(0).text(text[i]);
    // $('.product').eq(i).find('.shop_img').next().text(productList[i].text[i]);
    // $('.product').eq(i).find('a').attr('href',productList[i].link[i]);
-preEq= $('product').eq(i);
+prEq= $('product').eq(i);
 
-     preEq.find('.shop_img').css({backgroundColor:productList[i].color[i]});
+     preEq.find('.shop_img').css({backgroundColor:productList[i].color});
    // $('.product').eq(i).find('p').eq(0).text(text[i]);
-   prEq.find('.shop_img').next().text(productList[i].text[i]);
-   prEq.find('a').attr('href',productList[i].link[i]);
+   prEq.find('.shop_img').next().text(productList[i].text);
+   prEq.find('a').attr('href',productList[i].link);
 
 
  }
