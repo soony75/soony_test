@@ -1,8 +1,0 @@
-﻿/*@ 현재 서버 날짜 & 시간 GEN @*/
-var  __Ndaytime= {
-    "ba":{"year":"2018","month":"12","day": "5","hour24": "9","minute": "8","second": "0","weekday": "3"}
-    ,"ex":{"month_js":"11","hour12": "9","ampm": "AM","ampmK": "오전","weekdayK": "수"}
-    ,"pr":{"ymday": "2018-12-05","hsTime": "09:08"}
-    ,"ymdhm":201812050908
-    ,"ymdhms":20181205090800
- };

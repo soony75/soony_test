@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../../fonts/nanumFonts.css" />
   <link rel="stylesheet" href="../../css/base/reset.css" />
   <link rel="stylesheet" href="../../css/base/common.css" />
-  <link rel="stylesheet" href="../../css/src/gcass/layout.css" />
+  <link rel="stylesheet" href="../../css/src/gcass/main_page.css" />
 
   <!--[if IE]>
     <script src="../../ie/html5shiv/src/html5shiv.js"></script>
@@ -21,8 +21,8 @@
   <!-- layout -->
   <div id="wrap">
     <aside id="homeBox">
-      <h2 class="hidden">sub menu</h2>
-      <ul>
+     <!--  <h2 class="hidden">sub menu</h2>
+      <ul class="hidden_wrap">
         <li><a href="#" target="_blank">
           <span>home</span>
         </a></li>
@@ -32,34 +32,35 @@
         <li><a href="#" target="_blank">
           <span>education</span>
         </a></li>
-      </ul>
+      </ul> -->
     </aside>
     <!-- // #homeBox -->
 
     <div class="box_wrap clearfix">
       <header id="headBox">
-        <h1 class="hidden_wrap">
+       <!--  <h1 class="hidden_wrap">
           <a href="./main_layout.html">
           <span><abbr title="greeen computer art school student web">gcass</abbr></span>
           </a>
         </h1>
 
         <nav id="gnb">
-          <h2 class="hidden">gcass 전체 메뉴</h2>
-          <ul>
-            <li><a href="#" target="_blank">about</a></li>
-            <li><a href="#" target="_blank">study</a></li>
-            <li><a href="#" target="_blank">photo</a></li>
-            <li><a href="#" target="_blank">blog</a></li>
-            <li><a href="#" target="_blank">press</a></li>
-            <li><a href="#" target="_blank">q and a</a></li> 
+          <h2 class="hidden ">gcass 전체 메뉴</h2>
+          <ul class="hidden_wrap">
+            <li><a href="#" target="_blank"><span>about</span></a></li>
+            <li><a href="#" target="_blank"><span>study</span></a></li>
+            <li><a href="#" target="_blank"><span>photo</span></a></li>
+            <li><a href="#" target="_blank"><span>blog</span></a></li>
+            <li><a href="#" target="_blank"><span>press</span></a></li>
+            <li><a href="#" target="_blank"><span>q and a</span></a></li> 
           </ul>
-        </nav>
+        </nav> -->
       </header>
       <!-- // #headBox -->
 
       <section id="viewBox">
         <h2 class="hidden">광고 메세지</h2>
+        <div class="com_bg"></div>
         <div class="com">
           <!-- 컴퓨터 이미지 삽입 -->
         </div>
@@ -82,43 +83,39 @@
       </div>
 
       <address class="addr_area">
-        <p>
+
+        <p class="hidden">
           <strong>address</strong> 
-          <i class="hidden"> - </i> 경기도 수원시 매산로 2가 12-1 2층 
+          <i class="hidden hidden_wrap"> - </i> 경기도 수원시 매산로 2가 12-1 2층 
           <span class="hidden"> - </span> 
           <strong>telephone</strong> 
           <i class="hidden"> - </i> 
           031 <i class="dash"></i> 243 <i class="dash"></i> 2111
         </p>
-        <p> &copy;2018 gcass corp.</p>
-        <!-- ⓒ   -->
+        <p class="hidden"> &copy;2018 gcass corp.</p>
+        
       </address>
 
       <div class="more_area">
         <h3 class="hidden">기타 gcass family 사이트</h3>
         <dl class="clearfix">
-          <dt>web page</dt>
-          <dd><a href="//www.greenart.co.kr" target="_blank">그린컴퓨터 아트학원</a></dd>
-          <dt>family cafe</dt>
-          <dd><a href="//webportfolio.github.io" target="_blank">시도 깃허브</a></dd>
+          <dt><span class="hidden" >web page</span></dt>
+          <dd><a href="//www.greenart.co.kr" target="_blank"><span class="hidden">그린컴퓨터 아트학원</span></a></dd>
+          <dt><span class="hidden">family cafe</span></dt>
+          <dd><a href="//webportfolio.github.io" target="_blank"><span class="hidden">시도 깃허브</span></a></dd>
         </dl>
 
         <h3 class="hidden">추가내용</h3>
         <p>본 사이트는 교육용 목적으로 사용한 페이지로, 어떠한 경우라도 영리를 취하지 않습니다.</p>
-      </div>
+      </div> 
 
     </footer>
   </div>
   <!-- script -->
   <script src="../../js/base/jquery-3.3.1.min.js"></script>
   <script src="../../js/base/jquery-ui.min.js"></script>
-  <script>
-    (function($){
-var com =$('.com');
-com.html('<div class="comOuter "></div> ');
-$('.comOuter').css({transform:'skew(-15deg)'})
+  <script src="../../js/src/gcass/main_01.js"></script>
 
-    } 
-  </script>
+
 </body>
 </html>
