@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/src/form03.css">
+</head>
+<body>
+<div id="wrap">
+  <form action="#" id="post">
+    <fieldset >
+      <legend>회원가입 </legend>
+        <table summary="회원가입">
+          <caption class="hidden">회원가입 </caption>
+          <h1>회원가입 </h1>
+          <tr >
+            <th>아이디 </th>
+            <td> 
+              <label for="idName"></label>
+              <input type="text" id="idName" value="" placeholder="아디디를 입력하세요" required="required">
+              <button type="button" class="conform_id">중복확인</button>
+            </td>
+          </tr>
+          <tr>
+            <th>이름 </th>
+            <td>
+              <label for="Name"></label>
+              <input type="text" id="Name" value="">
+            </td>
+          </tr>
+          <tr>
+            <th>성별 </th>
+            <td>
+            <input type="radio" name="ra_01" value="남성" checked="checked">
+            <label for="ra_01">남</label> 
+            <input type="radio" name="ra_02" value="여성">
+            <label for="ra_02">여</label> 
+             
+          </td>
+          </tr>
+          <tr>
+            <th>암호</th>
+            <td>
+              <label for="pwName"></label>
+              <input type="password" id="pwName" value="" placeholder="암호를 입력하세요"></td>
+          </tr>
+          <tr>
+            <th>암호확인</th>
+            <td>
+              <label for="pwName2"></label>
+              <input type="password" id="pwName2" value="" >*같은 암호를 입력하세요</td></td>
+          </tr>
+          <tr>
+            <th>이메일</th>
+            <td>
+            <input type="email" id="email1" value=""> @ 
+            <input type="email" id="email2" value="">
+            <select name="" id="">
+              <option value="">naver.com</option>
+              <option value="">daum.net</option>
+            </select> 
+          </td>
+          </tr>
+          <tr>
+            <th>주소</th>
+            <td>
+              <input type="text" id="addBox" name="" value="">
+              <button type="button" > 주소찾기</button>
+            </td>
+          </tr>
+          <tr>
+            <th>휴대폰</th>
+            <td>
+            <input type="radio" id="tel01" name="tel01" value="skt" checked="checked">
+            <label for="tel01">SKT</label>
+             <input type="radio" id="tel02" name="tel02" value="kt">
+            <label for="tel02">KT</label>
+            <input type="radio" id="tel03" name="tel03" value="lgu+">
+            <label for="tel03">LGU+</label><br />
+            <select name="telName" id="telName">
+              <option value="010">010</option>
+              <option value="017">017</option>
+              <option value="011">011</option>
+            </select>-
+            <label for="telM"></label>
+            <input type="text" id="telM" value="">
+             -
+             <label for="telL"></label>
+            <input type="text" id="telL" value="">
+             </td>
+  
+          </tr>
+          <tr>
+            <th>관심</th>
+            <td>
+              <input type="checkbox" id="check01" value="shop">
+              <label for="check01">쇼핑</label>
+              <input type="checkbox" id="check02" value="game">
+              <label for="check02">게임</label>
+              <input type="checkbox" id="check03" value="trip">
+              <label for="check03">여행</label>
+              <input type="checkbox" id="check04" value="etc">
+              <label for="check04">기타</label>     
+            </td>
+          </tr>
+          <tr class="textar01">
+            <th>자기소개 </th>
+            <td >
+              <input type="textarea" id="textareaBox" value="" > </td>
+          </tr>
+         
+        </table>
+        <table class="last_tr">
+           <tr >
+            <td colspan="2"><button type="submit" value="확인">확인</button>  <button type="reset" value="다시입력">다시입력</button></td>
+          </tr>
+        </table>
+      
+    </fieldset>
+  </form>
+</div>
+<table>
+  <tr>
+    <td>1111111</td>
+  </tr>
+</table>
+</body>
+</html>

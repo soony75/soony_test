@@ -1,0 +1,18 @@
+/* form03.css */
+
+
+/*#wrap{margin: auto;}*/
+table,tr,th,td{border: 1px solid #333; }
+th{padding: 0.5rem;}
+
+h1{text-align: center;}
+table{margin: auto;}
+#idName,#Name,#pwName,#pwName2,#email1,#email2,#addBox{width:150px;height: 20px;}
+#telName,#telM,#telL{width: 50px;height: 20px;}
+tr,td{background-color: #fffff0;}
+.conform_id{}
+.last_tr,.last_tr td{text-align: center; border:0; padding: 0;}
+.textar01{height: 200px;}
+#textareaBox{width: 98%;height:300px;}
+.ta02{border:0; padding: 0;}
+

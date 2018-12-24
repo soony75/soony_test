@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/src/tableTojoin_01.css">
+  <title>회원가입</title>
+</head>
+<body>
+  <div id="wrap">
+    <h1>회원가입 <span>페이지 만들기</span></h1>
+   <form action="" method="post">
+    <fieldset>
+      <legend class="hidden">회원가입 페이지 상세내용</legend>
+ <!--      <colgroup>
+        <col class="title">
+        <col class="content">
+      </colgroup> -->
+      <table summary="테이블을 이용한 회원가입 페이지 생성">
+       <caption class="hidden"></caption>
+       <thead class="hidden">
+        <tr>
+         <th>분류</th>
+         <td>내용</td>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+          <th>
+            <label for="in_01">아이디</label>
+          </th>
+          <td>
+            <input type="text" class="input-text" id="in_01" name="inName"  value="" placeholder="아이디" />    
+            <button type="button" class="check-btn"><span class="hidden">아이디 </span>중복확인</button>
+          </td>
+          </tr>
+         <tr>
+          <th>
+            <label for="in_02">이름</label></th>
+            <td>
+              <input type="text" id="in_02" class="input-text" name="userName" value="" placeholder="사용자 이름을 입력">
+              
+            </td>
+          </tr>
+         <tr>
+          <th>
+            <label for="in_03">성별
+              <span class="hidden">을 선택하세요;</span><br/>
+            </label>
+          </th>
+            <td>
+              <input type="radio" id="in_03" name="gender" value="남성 " checked>
+              <label for="in_03">남성</label>
+              <input type="radio" id="in_03-1" name="gender" value="여성">
+              <label for="in_03-1">여성</label>
+            </td>
+          </tr>
+         <tr>
+          <th>
+            <label for="in_04">암호
+            <span class="hidden">여덟자리이상 열다섯자리 이하의 글자를 입력하세요.</span>
+            </label>
+          </th>
+            <td>
+              <input type="password" id="in_04"  class="input-text" name="pwName" value="" placeholder="비밀번호">
+            </td>
+          </tr>
+         <tr>
+          <th>
+            <label for="in_05"><span class="hidden">이전의 작성된</span>암호확인
+              <span class="hidden">이전의 작성된 비밀번호 확인입니다. 다시한번 동일하게 작성하세요</span></label>
+
+            </th><td>
+                <input type="password" id="in_05"  class="input-text" name="pwName2" value="" placeholder="비밀번호 확인" /> <span class="in_text"><!--  이미지 내용 --></span>
+              </td></tr>
+         <tr>
+          <th>
+            <label for="in_06">이메일</label>
+          </th>
+          <td class="mail_area">
+            <input type="text" id="in_06" class="input-text" name="firstMailName" value="" />
+            <label for="in_06-1" class="hidden">메일 주소를 작성하거나 선택하세요
+            </label>
+            <span class="in_text"><!-- 이미지 내용 --></span>
+            <input type="text" id="in_06-1" class="input-text" name="lastMailName" value="" />
+            <select name="mailSel" id="in_06-2">
+              <option value="naver">naver.com</option>
+              <option value="daum">daum.net</option>
+              <option value="google">google.com</option>
+              <option value="bate">bate.com</option>
+            </select>
+            <label for="in_06-2"></label>
+          </td>
+        </tr>
+         <tr>
+          <th>
+            <label for="in_07">주소</label>
+          </th>
+            <td>
+              <input type="text" class="input-text" id="in_07" name="addName"  value="" placeholder="주소확인" />    
+            <button type="button" class="check-btn">주소찾기</button>
+            </td>
+          </tr>
+         <tr>
+          <th>
+            <label for="in_08">휴대폰</label>
+          </th>
+          <td colspan="phone_number">
+            <input type="radio" name="telecom" name="tel_01" value="">
+            <label for="tel_01">sk t<span class="hidden">elecom</span></label>
+            <input type="radio" name="telecom" name="tel_02" value="">
+            <label for="tel_02">kt<span class="hidden">telecom</span></label>
+            <input type="radio" name="telecom" name="tel_03" value="">
+            <label for="tel_03">lg u<span class="hidden">plus telecom</span></label>
+             <input type="radio" name="telecom" name="tel_03" value="">
+            <label for="tel_03">알뜰폰</label>
+            <br />
+            <!-- <input type="tel" id="moNum_01" value="" maxlength="3"> -->
+          <select name="mobNum" id="mobNum_01" class="input-text">
+            <option value="010">010</option>
+            <option value="011">011</option>
+            <option value="012">012</option>
+            <option value="013">013</option>
+            <option value="014">014</option>
+            <option value="015">015</option>
+            <option value="016">016</option>
+            <option value="017">017</option>
+            <option value="018">018</option>
+            <option value="019">019</option>
+          </select>
+            <label for="mobNum_01" class="hidden">전화번호 앞자리를 입력</label>
+            <span class="in_text"><!-- 이미지 -->          </span>
+            <input type="tel" id="moNum_02" value="" maxlength="4" class="input-text">
+            <label for="mobNum_02" class="hidden">전화번호 가운데 셋 또는 네자리 입력</label>
+            <span class="in_text"><!-- 이미지 -->          </span>
+            <input type="tel" id="moNum_03" value="" maxlength="4" class="input-text">
+            <label for="mobNum_03" class="hidden">전화번호 마지막 네자리 입력</label>
+            <span class="in_text"><!-- 이미지 -->          </span>
+          </td>
+        </tr>
+         <tr>
+          <th>
+            <label for="in_09">관심</label></th>
+            <td></td></tr>
+         <tr>
+          <th>
+            <label for="in_10">자기소개</label></th>
+            <td>            </td>
+          </tr>
+       </tbody>
+      </table>
+      <div class="check_btn">
+       <input type="reset" name="remove" value="다시입력">
+       <input type="submit" name="send" value="확인">
+      </div>
+     </fieldset>
+   </form>
+    
+
+  </div>
+</body>
+</html>
