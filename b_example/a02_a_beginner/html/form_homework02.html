@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/src/form_homework02.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="wrap">
+    <h1 class="hidden">회원가입 </h1>
+    <div class="head_title">
+      <h2><i></i>회원가입</h2>
+      <p class="member_info">
+        <strong class="hidden">중요</strong>
+        <span><i class="fas fa-asterisk"> </i>필수 입력 사항 </span>
+      </p>
+    </div>
+    <form action="">
+      <fieldset>
+        <legend  class="hidden">회원가입</legend>
+        <div class="mem_form" >
+        <dl>
+          <dt><i></i><label for="idName" >아이디<i class="fas fa-asterisk"> </i></label></dt>
+          <dd>
+            <input type="text" id="idName" name="idName" class="in-txt01" value="">
+            <button type="button" name="dupCheck" class="btn-check">중복확인</button>
+            <i class="duplication-check join_img"><!-- check --></i>
+          </dd>
+        
+          <dt><i></i><label for="fullName">이름<span class="hidden">을 입력하세요</span><i class="fas fa-asterisk"> </i></label></dt>
+          <dd><input type="text" id="fullName" name="fullName" class="in-txt01" value=""></dd>
+          
+          <dt><i></i><label for="radio_01">성별<span class="hidden">을 입력하세요</span><i class="fas fa-asterisk"> </i></label></dt>
+          <dd >
+            <input type="radio" id="radio_01" name="gender"  value="남성" checked="checked">
+              <label for="radio_01" class="ra_icon01"><i></i>남성</label>
+            <input type="radio" id="radio_02" name="gender"  value="여성">
+              <label for="radio_02" class="ra_icon01"><i></i>여성</label>
+        
+          </dd>
+          
+          <dt><i></i><label for="pwName1"><strong>암호</strong><span class="hidden">을 입력하세요<br />암호는 최소 열덟글자에서 열다섯글자로 입력해야 합니다.</span><i class="fas fa-asterisk"> </i></label></dt>
+          <dd><input type="password" id="pwName1" name="pwName1" class="in-txt01" value=""></dd>
+          
+          <dt><i></i><label for="pwName2" ><strong>암호확인</strong><i class="fas fa-asterisk"> </i></label><p class="hidden" id="info">위에서 작성하신 암호를 다시 한번 작성해 주세요.</p></dt>
+          <dd><input type="password" id="pwName2" name="pwName2" class="in-txt01" value="" placeholder="암호확인" aria-label="password" aria-describedby="info"></dd>
+          
+          <dt><i></i><label for="email1">이메일</label></dt>
+          <dd>
+            <input type="text" id="email1" name="email1" class="in_txt02" value="">
+          <input type="text" id="email1" name="email1" class="in_txt02" value="">
+          <select name="" id="">
+            <option value="naver">naver.com</option>
+          </select>
+          </dd>
+          
+          <dt><i></i><label for="">주소</label></dt>
+          <dd></dd>
+          
+          <dt><i></i><label for="">휴대폰</label></dt>
+          <dd></dd>
+          
+          <dt><i></i><label for="">관심</label></dt>
+          <dd></dd>
+          
+          <dt><i></i><label for="">자기소개</label></dt>
+          <dd></dd>
+        </dl>
+        </div>
+      </fieldset>
+       <fieldset>
+        <legend class="hidden">회원가입내용 작성후 처리 버튼 </legend>
+         <div class="form_button">
+           <input type="reset"  name="cancle" value="다시입력">
+            <input type="submit" name="checkSend"  value="확인">
+         </div>
+       </fieldset>
+    </form>
+   
+  </div>
+  
+</body>
+</html>
