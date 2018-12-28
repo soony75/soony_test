@@ -1,51 +1,25 @@
 /* form_homework02.css */
 
-#wrap{margin-top: 44px;  width: 100%;height: 100%;}
-#wrap>div{margin: auto; width: 700px;}
-.head_title{width: 100%;height: 80px;background-color: #fff;}
-h2{padding-left: 65px; width: 200px;height: 52px; background-image: url(../../img/form/join_01.png); background-position: -10px -52px; font-size: 2.5rem;line-height: 50px; font-family: malgun-gothic;}
-h2>i{}
-.head_title>span{float:right;}
-form,
-form,fieldset{width: 100%;height: auto;background-color: #aadfdf;}
-.mem_form{width: 100%;height: 560px;background-color: #fac;}
-.mem_form>dl{height: 560px;}
-
-.join_img{background-image: url(../../img/form/join_01.png);}
-
-.mem_form>dl>dt{float:left;padding-left:30px;padding-top:9px;   width: 25%; height: 43px;background-color: #ffa2bd; box-sizing: border-box;border-right:10px solid #fe558c; font-family: malgun-gothic;margin-bottom: 1px solid #fff;}
-.mem_form>dl>dt>i{display: block; float: left; width: 25px;height: 25px; background-image: url(../../img/form/join_01.png);background-position-y: -9px ;}
-.mem_form>dl>dt>i:nth-child(1){background-position-x: -10px;}
-.mem_form label{display: block; padding-top:8px;padding-left: 30px; font-weight: bold; background-color: #ffa2bd; }
-.mem_form>dl>dt:nth-of-type(2)>i{background-position-x: -45px;}
-.mem_form>dl>dt:nth-of-type(3)>i{background-position-x: -79px;}
-.mem_form>dl>dt:nth-of-type(4)>i{background-position-x: -112px;}
-.mem_form>dl>dt:nth-of-type(5)>i{background-position-x: -145px;}
-.mem_form>dl>dt:nth-of-type(6)>i{background-position-x: -179px;}
-.mem_form>dl>dt:nth-of-type(7)>i{background-position-x: -212px;}
-.mem_form>dl>dt:nth-of-type(8)>i{background-position-x: -245px;}
-.mem_form>dl>dt:nth-of-type(9)>i{background-position-x: -279px;}
-.mem_form>dl>dt:nth-of-type(10)>i{background-position-x: -312px;}
-
-.mem_form>dl>dt:nth-of-type(8),
-.mem_form>dl>dd:nth-of-type(8){min-height:84px;}
-
-.mem_form>dl>dt>label>i{float: right;font-size: 10pt; color:#1166c9;}
-
-/*  =========  */
-.in-txt01{width: 230px; height: 30px; border:none; border-bottom: 2px solid #7284b2;background-color: transparent;}
-.btn-check{ margin-right: 0.3rem; width: 80px;height: 30px; background-color: #7284b2; color: #fff; font-weight: bold; border-radius: 2px;}
-.duplication-check{display: inline-block; width: 24px;height: 24px; padding-tip:0.3rem;-webkit-background-origin: content-box;
- background-position: -45px -124px;}
- .duplication-plus{background-position: -11px -126px;}
+#wrap{padding-top:44px;	width: 100%;height: 100%;background-color: #acf;}
+#wrap>div{margin:auto; width: 700px;}
+.mem_title{width: 100%;height: 82px;background-color: #fac;}
+.mem_title>span:nth-child(1){display: block;float: left; margin-right: 10px; width: 55px;height: 53px; background-color: #fff;background-image: url(../../img/form/join_01.png);background-position: -9px -52px;}
+.mem_title>span:nth-child(2){display: block;font-size: 30pt; line-height: 63px;font-weight: bold}
+.mem_title>span:nth-child(3):before{content:"*" ; color: #032a87;font-size: 18pt;line-height:10px;  }
+.mem_title>span:nth-child(3){display: block;float:right; font-size: 12pt; line-height: 12px;font-weight: bold}
 
 
 
-.mem_form>dl>dd{float: right; padding:5px 0 0 10px;width: 75%; height: 43px;background-color: #dfdfdf;border-bottom: 1px solid #fff; box-sizing: border-box;}
-.ra_icon01{display: block;float: left;}
-.in_txt02{width: 200px;}
+.mem_form{width: 100%;height: 560px;background-color: #fff;}
+.mem_form dt{ float:left;padding-left: 64px; box-sizing: border-box; width: 200px;height: 42px;background-color: #ffa2bd;background-image: url(../../img/form/join_01.png); font-weight: bold;line-height: 42px;}
+.mem_form dt:nth-child(1){ background-position: 21px -2px;}
+.mem_form dt:nth-child(1)>label{display: block; background-color: #fff;}
 
-.form_button{padding: 20px 200px 60px; width: 600px;height: 82px;border-bottom: 1px solid;}
 
-input[type="reset"]{float:left; border:1px solid #1166c9; }
-input[type="submit"]{float:right;border:1px solid #1166c9; }
+.mem_form dd{ float:right; width: 500px;height: 42px;background-color: #dfdfdf;}
+
+
+
+.form_button{width: 100%;height: 82px; background-color: #caf;}
+
+h1>span{display: block; width: 52px;height: 55px;background-image: url(../../img/form/join_01.png);background-repeat: no-repeat; background-position: -61 -103;}

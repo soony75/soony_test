@@ -36,7 +36,7 @@
           
           <dt><i></i><label for="radio_01">성별<span class="hidden">을 입력하세요</span><i class="fas fa-asterisk "> </i></label></dt>
           <dd class="gender" >
-            <input type="radio" id="radio-01" name="gender"  value="남성" checked="checked" class="gender">
+            <input name="gender" type="radio" required class="gender" id="radio-01"  value="남성" checked="checked">
               <label for="radio-01" ><i class="join_img"> </i> 남성</label>
             <input type="radio" id="radio-02" name="gender"  value="여성" class="gender">
               <label for="radio-02"><i class="join_img"> </i> 여성</label>
@@ -48,9 +48,8 @@
             <label for="pwName1"><strong>암호</strong><span class="hidden">을 입력하세요<br />암호는 최소 열덟글자에서 열다섯글자로 입력해야 합니다.</span><i class="fas fa-asterisk"> </i></label>
           </dt>
           <dd>
-            <input type="password" id="pwName1" name="pwName1" class="in-txt01" value=""><div>
-              <p>8~15글자를 입력하세요</p>
-            </div>
+            <input type="password" id="pwName1" name="pwName1" class="in-txt01" value=""  placeholder="암호 8~15자 내외 입력">
+             <label for="pwName1" aria-hidden="true">            8~15글자를 입력하세요            </label> 
             
           </dd>
           
@@ -63,15 +62,25 @@
           </dd>
           
           <dt><i></i><label for="email1">이메일<span class="hidden">주소를 입력하세요 이름과, 사이트명을 구분하였습니다. <em> 기본 @는 작성되니 기입하지 않습니다.</em></span></label></dt>
-          <dd>
+          <dd class="eamil">
             <input type="text" id="email1" name="email1" class="in-txt01" value="" placeholder="메일주소">
             <span aira-hidden="true">@</span>
-          <input type="text" id="email1" name="email2" class="in-txt01" value="" placeholder="">
-          <label for="email2">@ 사용하는 이메일주소의 사이트이름 작성 또는 오른쪽 항목에서 선택</label>
+            <input type="text" id="email2" name="email2" class="in-txt01" value="" placeholder="메일 사이트">
+            <label for="email2">@ 사용하는 이메일주소의 사이트이름 작성 또는 오른쪽 항목에서 선택</label>
 
-          <input type="text" id="email1" name="email2" class="in-txt01" value="" placeholder="">
-          <label for="email2">이메일 사이트 하항목을 선택하세요 없으면 왼쪽에 기입하세요</label>
-
+            <input type="text" id="email3" name="email3" class="in-txt01" value="" placeholder="">
+            <label for="email3" class="hidden">이메일 사이트 하항목을 선택하세요 없으면 왼쪽에 기입하세요</label>
+            <dl class="in-txt01" >
+              <dt><button type="button">사이트주소</button></dt>
+              <dd>
+                <ul>
+                  <li><button type="button">naver.com</button></li>
+                  <li><button type="button">daum.net</button></li>
+                  <li><button type="button">gooble.com</button></li>
+                  <li><button type="button">hotmail.com</button></li>
+                </ul>
+            </dd>
+            </dl>
 
 
        
@@ -83,17 +92,7 @@
             <option value="gooble">gooble.com</option>
             <option value="hotmail">hotmail.com</option>
           </select> -->
-          <dl >
-            <dt><button type="button">사이트주소</button></dt>
-            <dd>
-              <ul>
-                <li><button type="button">naver.com</button></li>
-                <li><button type="button">daum.net</button></li>
-                <li><button type="button">gooble.com</button></li>
-                <li><button type="button">hotmail.com</button></li>
-              </ul>
-            </dd>
-          </dl>
+         
 
 
 
@@ -103,7 +102,7 @@
           <dt><i></i><label for="">주소</label></dt>
           <dd>
             <input type="text" id="add" name="addressName" value="" placeholder="주소를 선택">
-            <button type"findAddress">주소찾기</button>
+            <button type="findAddress">주소찾기</button>
           </dd>
           
           <dt><i></i><label for="">휴대폰</label></dt>
@@ -125,10 +124,10 @@
               <input type="text" id="telInput_01" name="telInput_01" class="in-txt01" value="" max="3" placeholder="번호 앞자리">
               <label for="telInput_01" class="hidden"> 휴대폰 앞자리 번호를 작성해 주세요</label>
               <span aria-hidden>-</span>
-              <input type="text" id="telInput_01" name="telInput_02" class="in-txt01" value="" max="4" placeholder="번호 가운데">
+              <input type="text" id="telInput_02" name="telInput_02" class="in-txt01" value="" max="4" placeholder="번호 가운데">
               <label for="telInput_02" class="hidden"> 휴대폰 가운데자리 번호를 작성해 주세요</label>
               <span aria-hidden>-</span>
-              <input type="text" id="telInput_01" name="telInput_03" class="in-txt01" value="" max="4" placeholder="번호 뒷자리">
+              <input type="text" id="telInput_03" name="telInput_03" class="in-txt01" value="" max="4" placeholder="번호 뒷자리">
               <label for="telInput_03" class="hidden"> 휴대폰 뒷자리 번호를 작성해 주세요</label>
             </div>
           </dd>
@@ -136,17 +135,17 @@
           <dt><i></i><label for="">관심</label></dt>
           <dd class="favorite">
               <div class="check_telecom clearfix">
-              <input type="chekbox" id="tel-01" name="favorite"  class="in-txt01" value="shop" checked="checked" >
+              <input type="chekbox" id="favor-01" name="favorite"  class="in-txt01" value="shop" checked="checked" >
               <label for="tel-01" ><i class="join_img"> </i> 쇼핑<span class="hidden">telecom</span></label>
              
-              <input type="chekbox" id="tel-02" name="favorite"   class="in-txt01"value="game" >
-              <label for="tel-02"><i class="join_img"> </i> 게임 <span class="hidden">telecom</span></label>
+              <input type="chekbox" id="favor-02" name="favorite"   class="in-txt01" value="game" />
+              <label for="favor-02"><i class="join_img"> </i> 게임 <span class="hidden">telecom</span></label>
 
-              <input type="chekbox" id="tel-03" name="favorite"   class="in-txt01"value="trip" >
-              <label for="tel-03"><i class="join_img"> </i> 여행 <span class="hidden">u plus</span></label>
+              <input type="chekbox" id="favor-03" name="favorite"   class="in-txt01" value="trip" >
+              <label for="favor-03"><i class="join_img"> </i> 여행 <span class="hidden">u plus</span></label>
               
-              <input type="chekbox" id="tel-04" name="favorite"   class="in-txt01"value="other" >
-              <label for="tel-04"><i class="join_img"> </i> 기타</label></div>
+              <input type="chekbox" id="favor-04" name="favorite"   class="in-txt01" value="other" >
+              <label for="favor-04"><i class="join_img"> </i> 기타</label></div>
 
           </dd>
           

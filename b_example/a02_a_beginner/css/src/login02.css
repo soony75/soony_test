@@ -6,7 +6,7 @@
 form,fieldset,input,button{margin: 0;border: 0;padding: 0;}
 
 #wrap{width: 100%;height: 100%; background-color: #afc; }
-.log_box{position: fixed;top:50%;left:50%;margin-top: -346px;margin-left: -298px;padding:91px 113px 89px 113px;box-sizing: border-box; width: 596px;height: 692px;background-color:rgba(173,173,173,0.5);border-radius: 4px ;background-image: url(../../img/bg/login_02_bg.png);}
+.log_box{position: fixed;top:50%;left:50%;margin-top: -346px;margin-left: -298px;padding:91px 113px 89px 113px;box-sizing: border-box; width: 596px;height: 692px;background-color:rgba(173,173,173,0.5);border-radius: 4px ;background-image: url(../../img/form/login_02_bg.png);}
 .bog_box>ul>li{width: 100%;}
 .log_top>li:first-child{margin-bottom: 60px; width: 100%;height: 106px;cursor: pointer;}
 

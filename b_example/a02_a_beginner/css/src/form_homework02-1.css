@@ -14,19 +14,19 @@ h2>i{float: left}
 .member_info>i{color:#1166c9;}
 
 form,
-form,fieldset{width: 100%;height: auto;background-color: #aadfdf;}
-.mem_form{width: 100%;height: 560px;background-color: #ff558d;}
+form,fieldset{width: 100%;height: auto;/*background-color: #aadfdf;*/}
+.mem_form{margin:auto; width: 700px;height: 560px;background-color: #ff558d;}
 .mem_form>dl{height: 560px;}
 
 .join_img{background-image: url(../../img/form/join_01.png);}
 
-.mem_form>dl>dt{float:left;padding:9px 20px 0 30px; box-sizing: border-box; width: 30%; height: 43px;background-color: #ffa2bd; border-bottom: 1px solid #fff; font-family: malgun-gothic;}
-.mem_form>dl>dd{float: right; padding:5px 0 0 10px;width: 70%; height: 43px;background-color: #dfdfdf;border-bottom: 1px solid #fff; box-sizing: border-box;}
+.mem_form>dl>dt{float:left;padding:9px 20px 0 30px; box-sizing: border-box; width:25%; height: 43px;background-color: #ffa2bd; border-bottom: 1px solid #fff; font-family: malgun-gothic;}
+.mem_form>dl>dd{float: right; padding:5px 0 0 10px;width: 75%; height: 43px;background-color: #dfdfdf;border-bottom: 1px solid #fff; box-sizing: border-box;}
 
 .mem_form>dl>dt>i{display: block; float: left; width: 25px;height: 25px; background-image: url(../../img/form/join_01.png);background-position-y: -9px ;}
 
 .mem_form>dl>dt>i:nth-child(1){background-position-x: -10px;}
-.mem_form label{display: block; padding-top:8px;padding-left: 30px; background-color: #ffa2bd; }
+.mem_form label{display: block; padding-top:8px;padding-left: 30px; /*background-color: #ffa2bd;*/ }
 .mem_form>dl>dt:nth-of-type(2)>i{background-position-x: -45px;}
 .mem_form>dl>dt:nth-of-type(3)>i{background-position-x: -79px;}
 .mem_form>dl>dt:nth-of-type(4)>i{background-position-x: -112px;}
@@ -45,6 +45,13 @@ form,fieldset{width: 100%;height: auto;background-color: #aadfdf;}
 
 .mem_form>dl>dt>label>i{float: right;font-size: 10pt; color:#1166c9;}
 
+.mem_form>dl>dd:nth-of-type(4)>label,
+.mem_form>dl>dd:nth-of-type(5)>label,
+.mem_form>dl>dd:nth-of-type(6)>label{display:inline-block; width:40%; font-size: 10pt; }
+
+
+.mem_form>dl>dd:nth-of-type(6)>.in-txt01{ width:25%; }
+
 /*  =========  */
 .in-txt01{width: 230px; height: 30px; border:none; border-bottom: 2px solid #7284b2;background-color: transparent;}
 .btn-check{ margin-right: 0.3rem; width: 80px;height: 30px; background-color: #7284b2; color: #fff; font-weight: bold; border-radius: 2px;}
@@ -61,7 +68,16 @@ form,fieldset{width: 100%;height: auto;background-color: #aadfdf;}
 
 
 /* email */
-.
+.email>.in-txt01{width: 30%;}
+.email>dl.in-txt01{float: right; height: 26px; position: relative; z-index: 100;}
+.email>dl.in-txt01 button{border:0; width: 100%; height: 100%; background-color:transparent; text-align: left; text-indent:0.5rem;}
+
+.email>dl.in-txt01 dt{width: 100%; height: 100%; padding-bottom: 2px;}
+.email>dl.in-txt01 dt i{float: right; width: 18px; height: 100%; background-position: -10px -130px;}
+.email>dl.in-txt01 dd{width: 100%; height:auto; display: none;}
+.email>dl.in-txt01 dd>ul{width: 100%; height:auto;}
+.email>dl.in-txt01 dd>ul>li{width: 100%; height:28px; background-color: #fff; border-bottom:1px solid #ff558d; box-sizing: border-box;}
+.email>dl.in-txt01:hover dd{display: block;}
 
 /*  =======*/
 .check_telecom{margin-bottom: 10px; width: 100%;height: 25px;}

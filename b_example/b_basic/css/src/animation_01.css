@@ -1,0 +1,228 @@
+/* animation_01.css */
+
+#wrap{margin: auto;width: 60px;height: auto;min-height: 10rem;background-color: #dfdfdf;}
+h1{margin-bottom: 1rem;padding: 1rem;text-align: center;border-bottom: 1px solid #333;}
+h2{width: 100%;height: auto;padding: 1rem;box-sizing: border-box;background-color: #39a;color:#fff;text-indent: 2rem;margin-bottom: 0.5rem;}
+.out_box{width: 100% ; height: auto;min-height: 10rem; background-color: #caa; }
+.out_box>ul{width: 100%;height: auto;}
+.out_box>ul:after{content: " "; display: block;width: 100%;height:0 ;clear:both;}
+.out_box li{float: left;margin: 1rem;width: 100px;height: 100px;border-radius:  50px; background-color: #0af;text-align: center;line-height: 100px;font-style: 1.5rem;color: #fff;font-weight: bold;}
+.out_box li:nth-child(1):hover{background-color: #f06; transition} /* 단순하게 변화 */
+.out_box li:nth-child(2):hover{background-color: #60f;height: 200px;font-size: 2rem;
+                               transition-property: all /* 브라우저에 따라 달라질수 있음 */   background-color,height ;transition-duration: 1000ms;}
+.out_box li:nth-child(3):hover{height: 300px;transition-duration:500ms; transition-property: height;transition-timing-function: cubic-bezier(.02,1.08,.8,.3);}
+.out_box li:nth-child(4):hover{font-size: 3rem; transition-property: font-size; transition-duration: 500ms; transition-delay: 300ms;}
+.out_box li:nth-child(5):hover{height: 300px;background-color: #fa0;transform:translateY(3rem); transition: all 1000ms ease 200ms;}
+.out_box li:nth-child(6){transition:all 1000ms linear;}
+.out_box li:nth-child(6):hover{background-color: #171717; text-shadow: 0.5 0.5 0.5 #fff;}
+.out_box li:nth-child(6):active{box-shadow: 0.3 0.3 0.3 #ff0 inset;}
+.out_box li:nth-child(7){transition:all 500ms ease}
+.out_box li:nth-child(7):hover{height: 300px; background-color: #f90;transition-duration: 2000ms}
+
+
+/*.out_box1>ul{width: 100%;height: auto;}*/
+/*.out_box1>ul:after{content: " "; display: block;width: 100%;height:0 ;clear:both;}*/
+.out_box1 li{position: relative; float: left;margin: 1rem; width: 200px ; height: 400px; background-color: #acf; }
+.out_box1>ul>li>div{position: absolute;background-color: #000;}
+.out_box1>ul>li>div:nth-of-type(1){top:0; left:0;         width:20px;height: 20px;}
+.out_box1>ul>li>div:nth-of-type(2){top:0; right:0;          width: 20px;height: 20px;} 
+.out_box1>ul>li>div:nth-of-type(3){bottom: 100%;width: 0% ;         width: 20px;height: 20px;} 
+.out_box1>ul>li>div:nth-of-type(4){bottom:0; width:0% ;        width: 20px;height: 20px;} 
+
+/*.out_box1>ul>li:hover>div{ width: 100% ;background-color: #000;transition-property: all 1000ms ease; }
+.out_box1>ul>li:hover>div{ height: 100% ;background-color: #000;transform:translate(100%, 0); transition-property: all 1000ms ease; }*/
+
+
+
+/*
+transition
+transition 란? css의 변화를 부드럽게 애니메이션 기능으로 처리되는 형태를 만들는것 
+transition-duration: ; 변화하는 시간 , 기본은  초단위 1초(1s) 1000ms(자바스크립트 개념으로 편리성을 위해 )
+transition-property: ; 어떠한 속성을 변화시킬것인가? 
+transition-timing-function: ; 변화하는 흐름에 대한 속도를 어떻게 처리할것인가?
+          -ease  좀더 자연스럽게 빨라지다 느리게 
+          -ease-in 점점 빠르게
+          -ease-out 점점 느리게
+          -ease-in-out 빨리지다 느리게
+          -linear 같은속도로
+          -cubic-bezier() 사용자 지정 
+transition-delay: ; 지연시간  얼마의 시간뒤에 transition 기능을 수행할것인가?
+transition:property duration timing-function delay ; transition이 가지는 속성을 하나로 뭉쳐서 처리하는 기능
+
+- 작성된 시간 앞 에있는것은 진행시간(duration), 뒤에있는것은 지연시간(delay)
+- 가급적이면 순서를 지켜서 속성값을 작성해야 한다.
+
+transition 작성시 :hover :active :focus 등등 기존 형태에서 변화의 시점을 던져주는 상황 (이베튼 발생시점)에 transition을 
+작성하면 원래대로 돌아갈때는 transition기능이 적용되지 않는다. ;
+
+
+*/
+
+.multi_link{width: 100%;height: 20rem;background-color: #cac; background-image: url("../../img/furniture__01.jpg");background-repeat: no-repeat;background-position: 50% 50%; background-size: 130% auto;}
+.multi_link>ul{width: 100%;height: 100%;background-color:rgba(70,30,0,0.8);
+}
+.multi_link>ul>li{float:left;width: 20%;height: 100%; border-right: 1px solid #fff; box-sizing: border-box;}
+.multi_link>ul>li:last-child{border-right: 0;}
+.multi_link a{display: block;padding: 5rem 1rem;box-sizing: border-box; width: 100%;height: 100%; transition: all 500ms ease; color:#fff;font-size: 1rem;}
+
+.link_wrap{ width: 100%;height: 100%;transition: all 500ms ease;}
+.link_wrap>i{position: relative; margin: auto;margin-bottom: 0.5rem; display: block; width: 2rem;height: 2rem;border-radius:  50%;border:2px solid #fff;box-sizing: border-box; text-align: center;line-height: calc(2rem -4px); font-size: 1.5rem;font-weight: bold; font-style: normal; transition:all 500ms ease-in-out; }
+.link_wrap>i:after{content: "+" ;display: block;position: absolute;top: -2.5%;left: -2.5%;border-radius: 50%; width: 107%;height: 107%;background-color:#fff;color: #171717; transform: scale(0);transition:all 500ms ease;   }
+
+.link_wrap>h4{width: 100%;height: auto; margin-bottom: 0.5rem; font-weight: normal;font-size: 0.875rem;transition:all 500ms ease-in-out;  }
+.link_wrap>h5::first-letter{text-transform: uppercase;transition:all 500ms ease; }
+.link_wrap>h5{margin-bottom: 1.5rem; width: 100%;height: auto;font-size: 1.2rem;transition:all 500ms ease;  }
+.link_wrap>p{ line-height: 110%;font-size: 0.9rem; text-align: left;opacity: 0;transition:all 500ms ease-in; }
+
+
+.multi_link a:hover,
+.multi_link a:focus{background-color: rgba(0,0,0,0.7);}
+
+.multi_link a:hover i,
+.multi_link a:focus i{transform: translateY(-2rem); }
+.multi_link a:hover i:after,
+.multi_link a:focus i:after{transform: scale(1);}
+
+.multi_link a:hover h4,
+.multi_link a:focus h4{transform: translateY(-2rem);}
+
+
+.multi_link a:hover h5,
+.multi_link a:focus h5{transform: translateY(-2rem); }
+
+
+/*.multi_link a:hover> .link_wrap,
+.multi_link a:focus> .link_wrap{transform: translateY(-2rem); }*/
+.multi_link a:hover p,
+.multi_link a:focus p{opacity: 1; transform: translateY(-2rem);}
+
+
+
+/* animation */
+.ani_narr{font-size: 1rem;line-height: 1.2;text-align: left;}
+
+.check{width: 30px;height: 30px;}
+
+.ani_box{margin-bottom: 5rem;width: 100%;height: 1000px;background-color: #fac;}
+.ani_box>ul{width: 100%;height: 100%; padding-top: 1rem;}
+.ani_box li{margin: 1rem; width: 50px;height: 50px;border-radius:  25px; background-color: #069; text-align: center;line-height: 50px;color:#fff;}
+
+.ani_box li:nth-child(1){
+  animation-name:oneFrame;
+  animation-duration: 1s;
+  animation-iteration-count:2; 
+
+ /* animation-timing-function: ease;*/ }
+
+ .ani_box li:nth-child(2){
+animation-name: oneFrame;
+animation-duration: 2000ms;
+animation-iteration-count: infinite;
+/*animation-direction: alternate;
+animation-direction: reverse;*/
+animation-direction: alternate-reverse;
+
+ }
+
+
+
+@keyframes oneFrame{
+
+  /* from */ 0%{transform: translate(0); background-color: #0af;}
+            50%{transform:translate(10rem, 3rem);}
+  /* to */   100%{transform: translate(30rem);background-color: #f06;}
+}
+
+ .ani_box li:nth-child(3){
+  animation-name: twoFrame;
+  animation-duration: 3000ms;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+
+  /* backwards는 원래 위치로 돌아감  */
+ }
+@keyframes twoFrame {
+
+  0%{transform:translate(0) rotate(0deg) scale(1);}
+  100%{transform:translate(30rem) rotate(720deg) scale(2);}
+}
+
+.ani_box li:nth-child(4){
+
+  animation-name: threeFrame;
+  animation-duration: 1000ms;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-play-state: running;
+}
+
+/*.ani_box li:nth-child(5){
+
+  animation-name: threeFrame;
+  animation-duration: 1000ms;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+ 
+}*/
+
+.ani_box li:nth-child(4):hover{animation-play-state: paused;}
+
+@keyframes threeFrame {
+
+  0%{background-color: #f06;}
+  100%{background-color: #f06; width: 500px; transform: scale(2);}
+}
+
+
+.ani_box:hover li:nth-child(6){
+  /*animation:name duration count direction;*/
+animation:set 2000ms 5 alternate ease;
+
+}
+
+@keyframes set {
+  0%{width: 100px;height: 100px;background-color: #f07;}
+  50%{transform: translate(3rem) rotate(360deg);}
+  100%{width: 500px;height: 300px;background-color: #fff;}
+}
+/*.check:checked +ul>li{transform:translate(10rem); transition:all 1000ms;}*/
+
+
+/* animation
+
+animation이란? transition과 달리 반복성을 가지거나 ,단일성이 아닌 여러복합성의 기능을 수행할때
+
+animation-name:; animation 기능을 수행할 함수(@keyframes)를 선택
+animation-duration   애니메이션 진행할 시간 2초동안 진행해라 3초동안 진행하라 
+animation-direction  애니메이션 종료후에 진행할 방향 설정 
+         -normal -reverse -alternate -alternate-reverse
+
+animation-fill-mode   애니메이션 이 시작하기 전에 끝이후에 어떻게 적용할 것인가?
+          -backwords -forwords -both
+animation-iteration-count  애니메이션 반복여부를 설정  무한반복이면 infinite
+animation-timing-function  속도 조절
+animation-play-state   멈춤 , 재생설정 
+          -running 
+animation-delay 지연시간 
+----------------------------------------------------------------------------
+@keyframes {}
+@keyframes {}란 ? 애니메이션에서 지정한 이름의 기능을 수행하기 위한 처리 내용, 일종의 함수다 
+
+keyframes는 선택자 내부에 작서하는 것이 아니다. 
+
+@media screen {}
+@charset ""
+@import url();
+@keyframes {}
+
+@keyframes aniName {}
+div{animation-name:naiName;}
+
+ */
+}
