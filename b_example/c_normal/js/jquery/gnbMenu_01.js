@@ -80,7 +80,7 @@ $.each(arr,function(i,d){
 
 $('#headBox').on('mouseleave',function (e) {
  gnbDd.slideUp();
-})
+});
 })(jQuery);
 
 
