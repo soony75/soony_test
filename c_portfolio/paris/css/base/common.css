@@ -12,6 +12,6 @@
 .clearfix:after,
 .clearfix::after{content: " "; display: block; width: 0; height: 0;clear:both;}
 
+
+
 #wrap{margin:0 auto;}
-
-
