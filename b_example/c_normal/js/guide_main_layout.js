@@ -35,6 +35,14 @@ var adBanner= $('#adBanner');
 var mainUrl= './main/';
 adBanner.load(mainUrl+ 'adBanner.html');
 
+//  news.html
+var bestNews =$('#bestNews');
+bestNews.children('h2').after('<div class="news"></news>');
+$('.news').load(mainUrl + 'news.html' );
+
+//  issueText.html
+bestNews.children('.news').after('<div class="issue_text"></div>');
+$('.issue_text').load(mainUrl + 'issueText.html');
 
 
 })(jQuery);

@@ -1,0 +1,62 @@
+/*  csv_common.css */
+
+.brand_bg{width: 100%;height: 240px;background-color: #acd;}
+.brand_bg>h3{text-align: center;font-size: 34pt; font-weight: bold; transform: translateY(100%); color: #16428c;}
+.brand_bg>h3>p{font-size: 12pt; color: #333  }
+aside{width: 100%;height: 76px;}
+aside>dl{margin: auto; width: 100%;height: 100%;border-top:1px solid #15418b; border-bottom: 1px solid #15418b; box-sizing: border-box;}
+aside>dl>dt{position: relative; width: 100%;height: 76px; background-color: #fff;  font-size: 26pt;font-weight: bold; text-transform: uppercase; line-height: 76px; text-indent: 10px; }
+aside dt>a{display: block; width: 100%;height: 100%;}
+aside dd{/*display: none;*/ margin: auto; width:100%; height: auto; }
+aside ul{position: absolute;width: 100%;height: auto; transform: translateY(calc(-120% -76px) ); background-color: #fff;}
+aside ul>li{padding: 1rem 0 0 1rem; width: 100%; height: 40px;  font-size: 20px; text-transform: uppercase;font-weight: bold; }
+
+aside li>a{width: 100%;height: auto;}
+aside li:hover,
+aside li:hover{ background-color: #15418b;}
+
+article{width: 100%;height: auto;min-height: 3000px;background-color: #afc;}
+article>dl{margin: auto; width: 100%;height: auto; }
+
+article>dl:nth-of-type(1){width: 87%;height: 628px;background-color: #acf;}
+
+
+
+
+/* csv_480 */
+@media screen and (max-width: 480px) {
+.brand_bg{background-image: url("../../../img/sectBox480/brand/contentBox.png");}
+
+aside dd{display: none;}
+
+
+/*article>dl:nth-child(1){height: 628px;background-color: #cc1;}
+article>dl:nth-child(2){height: 714px;background-color: #c1c;}
+article>dl:nth-child(3){height: 370px;background-color: #c1c;}*/
+
+
+
+}
+
+/*  csv_768 */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+aside dd{display: none;}
+.brand_bg{background-image: url("../../../img/sectBox768/brand/contentBox.png");}
+}
+/*  csv_1366 */
+@media screen and (min-width: 769px) and (max-width: 1366px) {
+ 
+
+ aside>dl>dt{display: none}
+ aside>dl>dd{margin: auto; width: 90%;height: auto; }
+ aside ul{margin: auto; width: 80%; height: 74px;}
+ aside ul>li{float: left;padding: 0; width: 24%; height: 100%;  text-align: center; line-height: 74px }
+
+}
+/*  csv_pcfull*/
+@media screen and (min-width: 1367px) {
+  
+}
+
+
+

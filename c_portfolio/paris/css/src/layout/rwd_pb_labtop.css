@@ -55,9 +55,9 @@
 /*  #sectBox06{  height: auto; }   */
 
   
-#footBox{height: 8.5rem;}
+#footBox{height:300px;}
  #footBox address{padding:32px 8px 0;}
-  .addBox{height: 78px;}
+  .addBox{height: 300px;}
 
 }
 
